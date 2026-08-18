@@ -118,11 +118,48 @@
                     <a href="#" class="hover:opacity-80 transition-opacity">
                         <p class="font-bold">Sonography mentorship</p>
                     </a>
-                    <button class="focus:outline-none cursor-pointer">
+                    <button id="menubar" class="focus:outline-none cursor-pointer">
                         <img src="assets/hamburger.png" alt="Menu">
                     </button>
                 </div>
             </nav>
+
+            <!-- hidden toggle menu -->
+            <div id="hiddenMenu" class="absolute top-0 right-0 px-5 py-10 bg-[#FFFFFF9E] backdrop-blur-md rounded-2xl flex flex-col items-start gap-6 translate-x-full opacity-0 transition-all duration-500 ease-in-out h-screen">
+                <div id="cross">
+                    <img src="assets/Vector (2).png" alt="">
+                </div>
+                <img src="assets/logo.png" alt="" class="h-[73px] ml-22">
+                <div class="flex items-center gap-2">
+                    <img src="assets/Group 125.png  " alt="">
+                    <p>10c The Green, Kings Norton, Birmingham, B38 8SD</p>
+                </div>
+                <div class="flex items-center gap-2">
+                    <img src="assets/ic_baseline-phone (1).png" alt="">
+                    <p>0121 392 3112</p>
+                </div>
+                <div class="flex items-center gap-2">
+                    <img src="assets/Group 127.png" alt="">
+                    <p>admin@ultrasounddiagnostic.co.uk</p>
+                </div>
+
+
+                <div class="mt-8 flex gap-5">
+                    <button class="bg-[linear-gradient(90deg,#0E0F3D_15%,#2F6080_25%,#4DACD4_35%)] py-2 px-6 rounded-full text-white font-semibold text-[20px] flex items-center gap-2  hover:bg-none duration-400 border-2 border-transparent hover:border-2 hover:border-[#0E0F3D] transition-opacity cursor-pointer group duration-300 transition-all bg-clip-padding
+                hover:text-[#0E0F3D] ">
+                        Contact Us
+                        <img src="assets/right-arrow-svgrepo-com 2.png" alt="Right Arrow"
+                            class="group-hover:invert transition-all">
+                    </button>
+                    <button
+                        class="py-3 px-6 rounded-full text-[20px] text-[#0E0F3D] font-semibold border-2 border-[#0E0F3D] flex items-center gap-2 hover:bg-[linear-gradient(90deg,#0E0F3D_15%,#2F6080_25%,#4DACD4_35%)] hover:text-white transition-colors cursor-pointer group hover:border-transparent duration-300 transition-all bg-clip-padding">
+                        Meet The Team
+                        <img src="assets/right-arrow-svgrepo-com 2 (1).png" alt="Right Arrow"
+                            class="group-hover:brightness-0 group-hover:invert transition-all">
+                    </button>
+                </div>
+
+            </div>
 
         </header>
 
@@ -437,7 +474,8 @@
 
         <div class="grid grid-cols-4 gap-4 mt-10">
 
-            <div class="flex flex-col pb-7 bg-white shadow-md  rounded-xl overflow-hidden hover:-translate-y-3 duration-500">
+            <div
+                class="flex flex-col pb-7 bg-white shadow-md  rounded-xl overflow-hidden hover:-translate-y-3 duration-500">
                 <img src="assets/Member4.png" alt="">
                 <div class="flex flex-col gap-4 py-5 px-5 items-start  bg-white relative">
                     <div
@@ -457,7 +495,8 @@
 
             </div>
 
-            <div class="flex flex-col pb-7 bg-white shadow-md  rounded-xl overflow-hidden hover:-translate-y-3 duration-500">
+            <div
+                class="flex flex-col pb-7 bg-white shadow-md  rounded-xl overflow-hidden hover:-translate-y-3 duration-500">
                 <img src="assets/Member2.jpg" alt="">
                 <div class="flex flex-col gap-4 py-5 px-5 items-start bg-white relative">
                     <div
@@ -478,7 +517,8 @@
 
             </div>
 
-            <div class="flex flex-col pb-7 bg-white shadow-md  rounded-xl overflow-hidden hover:-translate-y-3 duration-500">
+            <div
+                class="flex flex-col pb-7 bg-white shadow-md  rounded-xl overflow-hidden hover:-translate-y-3 duration-500">
                 <img src="assets/Member3.png" alt="">
                 <div class="flex flex-col gap-4 py-5 px-5 items-start  bg-white relative">
                     <div
@@ -499,7 +539,8 @@
 
             </div>
 
-            <div class="flex flex-col pb-7 bg-white shadow-md rounded-xl overflow-hidden hover:-translate-y-3 duration-500">
+            <div
+                class="flex flex-col pb-7 bg-white shadow-md rounded-xl overflow-hidden hover:-translate-y-3 duration-500">
                 <img src="assets/Member1.png" alt="">
                 <div class="flex flex-col gap-4 py-5 px-5 items-start  bg-white relative">
                     <div
@@ -620,7 +661,7 @@
             <!-- Female Scan -->
             <div class="px-5 py-8 bg-[#EEF7FB] rounded-xl shadow-lg  hover:-translate-y-3 duration-500">
                 <div class="flex justify-start gap-5 items-center ">
-                        <img src="assets/Femaleicon.png" alt="Female scan" class="h-[105px]">
+                    <img src="assets/Femaleicon.png" alt="Female scan" class="h-[105px]">
                     <div>
                         <h4 class="text-[20px] font-semibold">Female Scans</h4>
                         <p>For Same Day Results</p>
@@ -670,9 +711,11 @@
                         <p class="text-[18px] font-semibold">See Full Range</p>
                     </div>
 
-                    <button class="bg-[linear-gradient(90deg,#0E0F3D_15%,#2F6080_25%,#4DACD4_35%)] py-4 px-8 rounded-full text-white font-semibold text-[20px] flex items-center justify-center gap-2  hover:bg-none duration-400 border-2 border-transparent hover:border-2 hover:border-[#0E0F3D] transition-opacity cursor-pointer group duration-300 transition-all bg-clip-padding hover:text-[#0E0F3D] ">
-                        Book Here                        
-                    <img src="assets/right-arrow-svgrepo-com 2.png" alt="Right Arrow" class="group-hover:invert transition-all">
+                    <button
+                        class="bg-[linear-gradient(90deg,#0E0F3D_15%,#2F6080_25%,#4DACD4_35%)] py-4 px-8 rounded-full text-white font-semibold text-[20px] flex items-center justify-center gap-2  hover:bg-none duration-400 border-2 border-transparent hover:border-2 hover:border-[#0E0F3D] transition-opacity cursor-pointer group duration-300 transition-all bg-clip-padding hover:text-[#0E0F3D] ">
+                        Book Here
+                        <img src="assets/right-arrow-svgrepo-com 2.png" alt="Right Arrow"
+                            class="group-hover:invert transition-all">
                     </button>
 
 
@@ -683,7 +726,7 @@
             <!-- Male scan -->
             <div class="px-5 py-8 bg-[#08407B] text-white rounded-xl shadow-xl  hover:-translate-y-3 duration-500">
                 <div class="flex justify-start gap-5 items-center">
-                        <img src="assets/Femaleicon.png" alt="Female scan" class="h-[105px]">
+                    <img src="assets/Femaleicon.png" alt="Female scan" class="h-[105px]">
                     <div>
                         <h4 class="text-[20px] font-semibold">Female Scans</h4>
                         <p>For Same Day Results</p>
@@ -733,9 +776,10 @@
                         <p class="text-[18px] font-semibold">See Full Range</p>
                     </div>
 
-                    <button class="bg-[linear-gradient(90deg,#0E0F3D_15%,#2F6080_25%,#4DACD4_35%)] py-4 px-8 rounded-full text-white font-semibold text-[20px] flex items-center justify-center gap-2  hover:bg-none duration-400 border-2 border-transparent hover:border-2  transition-opacity cursor-pointer group duration-300 transition-all bg-clip-padding hover:text-white border-1 border-white ">
-                        Book Here                        
-                    <img src="assets/right-arrow-svgrepo-com 2.png" alt="Right Arrow">
+                    <button
+                        class="bg-[linear-gradient(90deg,#0E0F3D_15%,#2F6080_25%,#4DACD4_35%)] py-4 px-8 rounded-full text-white font-semibold text-[20px] flex items-center justify-center gap-2  hover:bg-none duration-400 border-2 border-transparent hover:border-2  transition-opacity cursor-pointer group duration-300 transition-all bg-clip-padding hover:text-white border-1 border-white ">
+                        Book Here
+                        <img src="assets/right-arrow-svgrepo-com 2.png" alt="Right Arrow">
                     </button>
 
 
@@ -746,7 +790,7 @@
             <!-- Paediatric Scans -->
             <div class="px-5 py-8 bg-[#EEF7FB] rounded-xl shadow-lg  hover:-translate-y-3 duration-500">
                 <div class="flex justify-start gap-5 items-center">
-                        <img src="assets/Femaleicon.png" alt="Female scan" class="h-[105px]">
+                    <img src="assets/Femaleicon.png" alt="Female scan" class="h-[105px]">
                     <div>
                         <h4 class="text-[20px] font-semibold">Female Scans</h4>
                         <p>For Same Day Results</p>
@@ -796,9 +840,11 @@
                         <p class="text-[18px] font-semibold">See Full Range</p>
                     </div>
 
-                    <button class="bg-[linear-gradient(90deg,#0E0F3D_15%,#2F6080_25%,#4DACD4_35%)] py-4 px-8 rounded-full text-white font-semibold text-[20px] flex items-center justify-center gap-2  hover:bg-none duration-400 border-2 border-transparent hover:border-2 hover:border-[#0E0F3D] transition-opacity cursor-pointer group duration-300 transition-all bg-clip-padding hover:text-[#0E0F3D] ">
-                        Book Here                        
-                    <img src="assets/right-arrow-svgrepo-com 2.png" alt="Right Arrow" class="group-hover:invert transition-all">
+                    <button
+                        class="bg-[linear-gradient(90deg,#0E0F3D_15%,#2F6080_25%,#4DACD4_35%)] py-4 px-8 rounded-full text-white font-semibold text-[20px] flex items-center justify-center gap-2  hover:bg-none duration-400 border-2 border-transparent hover:border-2 hover:border-[#0E0F3D] transition-opacity cursor-pointer group duration-300 transition-all bg-clip-padding hover:text-[#0E0F3D] ">
+                        Book Here
+                        <img src="assets/right-arrow-svgrepo-com 2.png" alt="Right Arrow"
+                            class="group-hover:invert transition-all">
                     </button>
 
 
@@ -808,28 +854,169 @@
         </div>
 
     </section>
-    
+
     <!-- Wpa Insurance Partner section -->
-    <section id="eight-section" class="my-20 mx-50 bg-[#08407B] rounded-3xl relative overflow-hidden flex justify-between items-center py-15 px-20 gap-10">
+    <section id="eight-section"
+        class="my-20 mx-50 bg-[#08407B] rounded-3xl relative overflow-hidden flex justify-between items-center py-15 px-20 gap-10 relative">
         <img src="assets/WPA-Provident-RGB 1.png" alt="">
-        <div class="text-white">
+
+        <div class="text-white z-10">
             <h2 class="text-[40px] font-semibold mb-5">Wpa Insurance Partner</h2>
-            <p class="text-[18px] mb-5">Universal Ultrasound diagnostics is now registered with and provides care through various healthcare insurance providers.</p>
-            <p class="text-[18px] mb-5">Preauthorisation by your insurance provider is usually required prior to making an appointment. An insurance excess or co-payment may also be required with certain providers.</p>
-            <button class="py-4 px-10 rounded-full text-[18px] text-white font-semibold border-2 border-white flex items-center gap-2 hover:bg-[linear-gradient(90deg,#0E0F3D_15%,#2F6080_25%,#4DACD4_35%)] hover:text-white transition-colors cursor-pointer duration-300 transition-all group hover:border-transparent bg-clip-padding ">
-                    Book Online
-                    <img src="assets/right-arrow-svgrepo-com 2.png" alt="Right Arrow"
-                        class="group-hover:brightness-0 group-hover:invert transition-all">
-                </button>
-            
+            <p class="text-[18px] mb-5">Universal Ultrasound diagnostics is now registered with and provides care
+                through various healthcare insurance providers.</p>
+            <p class="text-[18px] mb-5">Preauthorisation by your insurance provider is usually required prior to making
+                an appointment. An insurance excess or co-payment may also be required with certain providers.</p>
+            <button
+                class="py-4 px-10 rounded-full text-[18px] text-white font-semibold border-2 border-white flex items-center gap-2 hover:bg-[linear-gradient(90deg,#0E0F3D_15%,#2F6080_25%,#4DACD4_35%)] hover:text-white transition-colors cursor-pointer duration-300 transition-all group hover:border-transparent bg-clip-padding ">
+                Book Online
+                <img src="assets/right-arrow-svgrepo-com 2.png" alt="Right Arrow"
+                    class="group-hover:brightness-0 group-hover:invert transition-all">
+            </button>
+
         </div>
+        <!-- Overlay Design -->
+        <div class="h-[158px] w-[158px] bg-[#4A6EA8A3] rounded-full absolute -right-25 z-9"></div>
+        <div class="h-[296px] w-[297px] bg-[#4A6EA8A3] rounded-full absolute -right-35 z-8"></div>
+        <div class="h-[370px] w-[370px] bg-[#4A6EA8A3] rounded-full absolute -right-38 z-7"></div>
+        <div class="h-[426px] w-[426px] bg-[#4069A9DE] rounded-full absolute -right-33 z-6"></div>
+        <div class="h-[426px] w-[426px] bg-[#3861A4] rounded-full absolute -right-10 z-5"></div>
+        <div class="h-[426px] w-[426px] bg-[#325C9F99] rounded-full absolute right-10 z-4"></div>
+
 
     </section>
 
     <!--footer section -->
-    <section>
+    <section class=" mt-130 ">
+        <div class="bg-[#00213B] w-full relative">
+            <!-- overlay map image -->
+            <div class="absolute p-5 -top-110 left-8 mx-10 h-full ">
+                <img src="assets/map.png" alt="" class="h-[85%] object-cover border-15 border-white rounded-2xl">
+            </div>
+
+            <div class="grid grid-cols-[1fr_3fr] gap-10  text-white pt-65 px-20">
+
+                <div class=" flex flex-col gap-3 ">
+                    <img src="assets/logo.png" alt="" class="h-[103px] p-4 bg-[#FFFFFF] rounded-lg w-[251px]">
+                    <p>Providing private Ultrasound scans with compassion, advanced technology and expert care. Your
+                        health is our priority.</p>
+                    <div class="flex gap-5">
+                        <img src="assets/Frame 19 (1).png" alt="" class=" h-[90px] p-2 bg-[#FFFFFFE5] rounded-lg">
+                        <img src="assets/Frame 19.png" alt="" class="h-[90px] p-2 bg-[#FFFFFFE5] rounded-lg">
+                    </div>
+                    <p>Follow Us</p>
+                    <div class="flex gap-3 items-center">
+                        <img src="assets/Group 62.png" alt="" class="p-2 rounded-full bg-[#204158]">
+                        <img src="assets/Group 61.png" alt="" class="p-2 rounded-full bg-[#204158]">
+                        <img src="assets/ri_facebook-fill.png" alt="" class="p-2 rounded-full bg-[#204158]">
+                    </div>
+
+                </div>
+                <div class=" grid grid-cols-[1.5fr_1fr_1fr_1fr_1fr] gap-8">
+
+                    <div class="flex flex-col gap-4">
+                        <div class="flex gap-3 items-center">
+                            <img src="assets/Group 39.png" alt="">
+                            <p class="text-[18px] font-bold">Find Us</p>
+                        </div>
+                        <p>10c The Green, Kings Norton, Birmingham, B38 8SD</p>
+                        <div class="flex gap-2 items-center">
+                            <img src="assets/ic_baseline-phone.png" alt="">
+                            <p>0121 392 3112</p>
+                        </div>
+                        <div class="flex gap-2 items-center">
+                            <img src="assets/tabler_mail.png" alt="">
+                            <p>admin@ultrasounddiagnostic.co.uk</p>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col gap-4">
+                        <div class="flex gap-3 items-center">
+                            <img src="assets/hearticon.png" alt="">
+                            <p class="text-[18px] font-bold">Scans</p>
+                        </div>
+                        <p>Diagnostic Scans</p>
+                        <p>Paediatric Scans</p>
+                        <p>Pregnancy Scans</p>
+                        <p>Fertility Scans </p>
+                    </div>
+
+
+                    <div class="flex flex-col gap-4">
+                        <div class="flex gap-3 items-center">
+                            <img src="assets/mingcute_link-fill.png" alt="">
+                            <p class="text-[18px] font-bold">Quick Links</p>
+                        </div>
+                        <p>Pregnancy Digital Bundle</p>
+                        <p> Meet The Team</p>
+                        <p> Wellness Clinic</p>
+                        <p>Sonography Mentorship</p>
+                    </div>
+
+
+                    <div class="flex flex-col gap-4">
+                        <div class="flex gap-3 items-center">
+                            <img src="assets/mdi_legal.png" alt="">
+                            <p class="text-[18px] font-bold">Legal</p>
+                        </div>
+                        <p>Complaints Procedure</p>
+                        <p> Terms and Conditions</p>
+                        <p>Clinical Safety Policy</p>
+                        <p>Equality and Diversity Policy</p>
+                        <p>Modern Slavery Policy</p>
+                        <p>Digital Products Refund Policy</p>
+                        <p>and Terms and Conditions</p>
+                        <p>Company Number 14186755</p>
+                    </div>
+
+
+                    <div class="flex flex-col gap-4">
+                        <div class="flex gap-3 items-center">
+                            <img src="assets/Vector (1).png" alt="">
+                            <p class="text-[18px] font-bold">Help Us Improve</p>
+                        </div>
+                        <p>Leave a Review on Yell</p>
+                        <p> Leave a Review on Google My Business</p>
+                        <p>Leave a Review on Facebook</p>
+                        <p>A feedback form will be included in your appointment emails and we would welcome your
+                            feedback.</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="absolute bottom-22 left-80">
+                <p
+                    class="text-[20px] bg-[linear-gradient(90deg,#FFFFFF_25%,#2F6090_35%,#4DACD4_55%,#B8B99A_60%,#F7941F_100%)] leading-tight inline bg-clip-text text-transparent font-bold">
+                    Trusted Partnerships Supporting Your Health</p>
+
+                <div class="flex justify-between items-center gap-9">
+                    <img src="assets/image 6.png" alt="">
+                    <img src="assets/image 7.png" alt="">
+                    <img src="assets/image 8.png" alt="">
+                    <img src="assets/image 9.png" alt="">
+                    <img src="assets/image 10.png" alt="">
+                </div>
+            </div>
+
+            <div class="text-white pt-10">
+                <div class="h-[0.08px] bg-[#24445D] w-full"></div>
+                <div class="flex justify-between items-center  px-10 py-5">
+                    <div>
+                        <p>© 2026 Universal Ultrasound Group. All Rights Reserved.</p>
+                    </div>
+                    <div class="flex gap-2 items-center">
+                        <P>Sitemap</P>
+                        <div class="w-[1px] h-5 bg-white"></div>
+                        <p>Privacy Policy</p>
+                    </div>
+                </div>
+            </div>
+        </div>
 
     </section>
 
+    <script src="script.js"></script>
+
 </body>
+
 </html>
