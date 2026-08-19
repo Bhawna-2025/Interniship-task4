@@ -53,23 +53,26 @@
         </div>
 
         <!-- Header containing Top Bar and Navigation -->
-        <header class="relative z-20 w-full pt-5">
+        <header class="relative z-50 w-full md:pt-5 pt-2">
 
-            <div class="flex justify-between items-center px-20 pb-5">
-                <div class="flex gap-3">
-                    <p>Follow Us On</p>
-                    <img src="assets/Frame 47.png" alt="Instagram" class="h-6 w-6">
-                    <img src="assets/Frame 49.png" alt="TikTok" class="h-6 w-6">
-                    <img src="assets/Frame 51.png" alt="Facebook" class="h-6 w-6">
+            <div class="flex justify-between items-center md:px-20 px-5 pb-5">
+                <div class="flex md:flex-row flex-col gap-2">
+                    <p class="md:text-[18px] text-[12px]">Follow Us On</p>
+                    <div class="flex gap-3">
+                        <img src="assets/Frame 47.png" alt="Instagram" class="md:h-6 md:w-6 h-4  w-4">
+                        <img src="assets/Frame 49.png" alt="TikTok" class="md:h-6 md:w-6 h-4  w-4">
+                        <img src="assets/Frame 51.png" alt="Facebook" class="md:h-6 md:w-6 h-4  w-4">
+                    </div>
                 </div>
-                <div class="flex gap-7 items-center">
+                <div class="flex md:flex-row flex-col  md:gap-7 gap-1 md:items-center ">
                     <div class="flex items-center gap-2">
                         <img src="assets/Group 108.png" alt="Phone">
-                        <p>Speak with our friendly team now! <span class="font-bold">0121 392 3112</span></p>
+                        <p class="md:flex md:gap-2 hidden">Speak with our friendly team now! <span class="font-bold">0121 392 3112</span></p>
+                        <span class="font-bold md:hidden display text-[12px]">0121 392 3112</span>
                     </div>
-                    <div class="flex items-center gap-2">
-                        <img src="assets/us.png" alt="English" class="h-6 w-6 rounded-full">
-                        <p>English</p>
+                    <div class="flex items-center md:gap-2 gap-3">
+                        <img src="assets/us.png" alt="English" class="md:h-6 md:w-6 h-4  w-4 rounded-full">
+                        <p class="md:text-[18px] text-[12px]">English</p>
                         <img src="assets/Vector.png" alt="Dropdown">
                     </div>
                 </div>
@@ -77,55 +80,69 @@
 
             <!-- Navigation -->
             <nav
-                class="flex justify-between items-center px-10 bg-[#FFFFFF73] rounded-full mx-19 py-3 shadow-sm backdrop-blur-sm">
+                class="flex justify-between items-center md:px-10 px-3 bg-[#FFFFFF73] rounded-full md:mx-19 mx-2 md:py-4 py-2 shadow-sm backdrop-blur-sm">
                 <div>
-                    <img src="assets/logo.png" alt="Universal Ultrasound Diagnostics Logo" class="h-[73px] w-auto">
+                    <img src="assets/logo.png" alt="Universal Ultrasound Diagnostics Logo" class="md:h-[73px] h-[40px] md:w-auto">
                 </div>
-                <div class="flex items-center gap-8">
+                <div id="nav_links" class=" md:flex md:flex-row flex-col md:static  absolute  items-center gap-8 top-13 right-0 md:bg-transparent bg-[#FFFFFF9E] md:backdrop-blur-none backdrop-blur-md md:px-0 px-5 md:py-0 py-4 md:translate-x-0 translate-x-full md:opacity-100 opacity-0 transition-all duration-500 ease-in-out md:h-0 h-screen ">
                     <a href="#" class="hover:opacity-80 transition-opacity">
                         <div class="flex items-center gap-1">
                             <p class="font-bold">Diagnostic scans</p>
                             <img src="assets/Vector.png" alt="Dropdown">
                         </div>
                     </a>
+
                     <a href="#" class="hover:opacity-80 transition-opacity">
                         <p class="font-bold">Paediatric scans</p>
                     </a>
+
                     <a href="#" class="hover:opacity-80 transition-opacity">
                         <p class="font-bold">Pregnancy scans</p>
                     </a>
+
                     <a href="#" class="hover:opacity-80 transition-opacity">
                         <p class="font-bold">Pregnancy digital bundle</p>
                     </a>
+
                     <a href="#" class="hover:opacity-80 transition-opacity">
                         <div class="flex items-center gap-1">
                             <p class="font-bold">Fertility scans</p>
                             <img src="assets/Vector.png" alt="Dropdown">
                         </div>
                     </a>
-                    <a href="#" class="hover:opacity-80 transition-opacity">
+
+                    <a href="/Team.html" class="hover:opacity-80  transition-opacity">
                         <div class="flex items-center gap-1">
                             <p class="font-bold">Meet the team</p>
                             <img src="assets/Vector.png" alt="Dropdown">
                         </div>
                     </a>
+
                     <a href="#" class="hover:opacity-80 transition-opacity">
                         <div class="flex items-center gap-1">
                             <p class="font-bold">Wellness clinic</p>
                             <img src="assets/Vector.png" alt="Dropdown">
                         </div>
                     </a>
+
                     <a href="#" class="hover:opacity-80 transition-opacity">
                         <p class="font-bold">Sonography mentorship</p>
                     </a>
-                    <button id="menubar" class="focus:outline-none cursor-pointer">
-                        <img src="assets/hamburger.png" alt="Menu">
-                    </button>
                 </div>
+
+                <!-- menu bar for desktop view -->
+                <button id="menubar" class="menubarIcon focus:outline-none cursor-pointer md:flex hidden">
+                    <img src="assets/hamburger.png" alt="Menu">
+                </button>
+
+                <!-- Menu bar for mobile view  -->
+                 <button id="menubar2" class="focus:outline-none cursor-pointer md:hidden ">
+                        <img src="assets/hamburger.png" alt="Menu" class="h-8">
+                </button>
             </nav>
 
             <!-- hidden toggle menu -->
-            <div id="hiddenMenu" class="absolute top-0 right-0 px-5 py-10 bg-[#FFFFFF9E] backdrop-blur-md rounded-2xl flex flex-col items-start gap-6 translate-x-full opacity-0 transition-all duration-500 ease-in-out h-screen">
+            <div id="hiddenMenu" class="toggleMenu fixed z-[100] top-0 right-0 px-5 py-10 bg-[#FFFFFF9E] backdrop-blur-md rounded-2xl flex flex-col items-start gap-6 translate-x-full opacity-0 transition-all duration-500 ease-in-out h-screen">
                 <div id="cross">
                     <img src="assets/Vector (2).png" alt="">
                 </div>
@@ -463,12 +480,13 @@
                 <p class="text-[20px]">Meet the dedicated team that makes it all possible</p>
             </div>
             <div>
-                <button
-                    class="py-4 px-10 rounded-full text-[18px] text-[#0E0F3D] font-semibold border-2 border-[#0E0F3D] flex items-center gap-2 hover:bg-[linear-gradient(90deg,#0E0F3D_15%,#2F6080_25%,#4DACD4_35%)] hover:text-white transition-colors cursor-pointer duration-300 transition-all group hover:border-transparent bg-clip-padding">
-                    View All
-                    <img src="assets/right-arrow-svgrepo-com 2 (1).png" alt="Right Arrow"
-                        class="group-hover:brightness-0 group-hover:invert transition-all">
-                </button>
+               <a href="/Team.html"><button
+                        class="py-4 px-10 rounded-full text-[18px] text-[#0E0F3D] font-semibold border-2 border-[#0E0F3D] flex items-center gap-2 hover:bg-[linear-gradient(90deg,#0E0F3D_15%,#2F6080_25%,#4DACD4_35%)] hover:text-white transition-colors cursor-pointer duration-300 transition-all group hover:border-transparent bg-clip-padding">
+                         View All
+                        <img src="assets/right-arrow-svgrepo-com 2 (1).png" alt="Right Arrow"
+                            class="group-hover:brightness-0 group-hover:invert transition-all">
+                    </button>
+                </a>
             </div>
         </div>
 

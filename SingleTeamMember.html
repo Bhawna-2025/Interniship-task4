@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fustat:wght@200..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="font-fustat text-[#135269]">
+
+    <section id="hero-section" class="relative w-full min-h-[50%] overflow-hidden">
+
+        <!-- Background Layers -->
+        <div id="hero-background" class="absolute inset-0 -z-20">
+            <!-- Base background color -->
+            <div class="absolute inset-0 opacity-50 bg-[#AEE1EA]"></div>
+            <!-- Background image -->
+            <img src="assets/section1bg.png" alt="Background" class=" opacity-40">
+        </div>
+
+
+        <!-- Header containing Top Bar and Navigation -->
+        <header class="relative z-50 w-full md:pt-5 md:pb-10 pt-2">
+
+            <div class="flex justify-between items-center md:px-20 px-5 pb-5">
+                <div class="flex md:flex-row flex-col gap-2">
+                    <p class="md:text-[18px] text-[12px]">Follow Us On</p>
+                    <div class="flex gap-3">
+                        <img src="assets/Frame 47.png" alt="Instagram" class="md:h-6 md:w-6 h-4  w-4">
+                        <img src="assets/Frame 49.png" alt="TikTok" class="md:h-6 md:w-6 h-4  w-4">
+                        <img src="assets/Frame 51.png" alt="Facebook" class="md:h-6 md:w-6 h-4  w-4">
+                    </div>
+                </div>
+                <div class="flex md:flex-row flex-col  md:gap-7 gap-1 md:items-center ">
+                    <div class="flex items-center gap-2">
+                        <img src="assets/Group 108.png" alt="Phone">
+                        <p class="md:flex md:gap-2 hidden">Speak with our friendly team now! <span
+                                class="font-bold">0121 392 3112</span></p>
+                        <span class="font-bold md:hidden display text-[12px]">0121 392 3112</span>
+                    </div>
+                    <div class="flex items-center md:gap-2 gap-3">
+                        <img src="assets/us.png" alt="English" class="md:h-6 md:w-6 h-4  w-4 rounded-full">
+                        <p class="md:text-[18px] text-[12px]">English</p>
+                        <img src="assets/Vector.png" alt="Dropdown">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Navigation -->
+            <nav
+                class="flex justify-between items-center md:px-10 px-3 bg-[#FFFFFF73] rounded-full md:mx-19 mx-2 md:py-4 py-2 shadow-sm backdrop-blur-sm">
+                <div>
+                    <img src="assets/logo.png" alt="Universal Ultrasound Diagnostics Logo"
+                        class="md:h-[73px] h-[40px] md:w-auto">
+                </div>
+                <div id="nav_links"
+                    class=" md:flex md:flex-row flex-col md:static  absolute  items-center gap-8 top-13 right-0 md:bg-transparent bg-[#FFFFFF9E] md:backdrop-blur-none backdrop-blur-md md:px-0 px-5 md:py-0 py-4 md:translate-x-0 translate-x-full md:opacity-100 opacity-0 transition-all duration-500 ease-in-out md:h-0 h-screen ">
+                    <a href="#" class="hover:opacity-80 transition-opacity">
+                        <div class="flex items-center gap-1">
+                            <p class="font-bold">Diagnostic scans</p>
+                            <img src="assets/Vector.png" alt="Dropdown">
+                        </div>
+                    </a>
+
+                    <a href="#" class="hover:opacity-80 transition-opacity">
+                        <p class="font-bold">Paediatric scans</p>
+                    </a>
+
+                    <a href="#" class="hover:opacity-80 transition-opacity">
+                        <p class="font-bold">Pregnancy scans</p>
+                    </a>
+
+                    <a href="#" class="hover:opacity-80 transition-opacity">
+                        <p class="font-bold">Pregnancy digital bundle</p>
+                    </a>
+
+                    <a href="#" class="hover:opacity-80 transition-opacity">
+                        <div class="flex items-center gap-1">
+                            <p class="font-bold">Fertility scans</p>
+                            <img src="assets/Vector.png" alt="Dropdown">
+                        </div>
+                    </a>
+
+                    <a href="#" class="hover:opacity-80 text-[#F7941F] transition-opacity">
+                        <div class="flex items-center gap-1">
+                            <p class="font-bold">Meet the team</p>
+                            <img src="assets/orangeVector.png" alt="Dropdown" class="">
+                        </div>
+                    </a>
+
+                    <a href="#" class="hover:opacity-80 transition-opacity">
+                        <div class="flex items-center gap-1">
+                            <p class="font-bold">Wellness clinic</p>
+                            <img src="assets/Vector.png" alt="Dropdown">
+                        </div>
+                    </a>
+
+                    <a href="#" class="hover:opacity-80 transition-opacity">
+                        <p class="font-bold">Sonography mentorship</p>
+                    </a>
+                </div>
+
+                <!-- menu bar for desktop view -->
+                <button id="menubar" class="menubarIcon focus:outline-none cursor-pointer md:flex hidden">
+                    <img src="assets/hamburger.png" alt="Menu">
+                </button>
+
+                <!-- Menu bar for mobile view  -->
+                <button id="menubar2" class="focus:outline-none cursor-pointer md:hidden ">
+                    <img src="assets/hamburger.png" alt="Menu" class="h-8">
+                </button>
+            </nav>
+
+            <!-- hidden toggle menu -->
+            <div id="hiddenMenu"
+                class="toggleMenu fixed z-[100] top-0 right-0 px-5 py-10 bg-[#FFFFFF9E] backdrop-blur-md rounded-2xl flex flex-col items-start gap-6 translate-x-full opacity-0 transition-all duration-500 ease-in-out h-screen">
+                <div id="cross">
+                    <img src="assets/Vector (2).png" alt="">
+                </div>
+                <img src="assets/logo.png" alt="" class="h-[73px] ml-22">
+                <div class="flex items-center gap-2">
+                    <img src="assets/Group 125.png  " alt="">
+                    <p>10c The Green, Kings Norton, Birmingham, B38 8SD</p>
+                </div>
+                <div class="flex items-center gap-2">
+                    <img src="assets/ic_baseline-phone (1).png" alt="">
+                    <p>0121 392 3112</p>
+                </div>
+                <div class="flex items-center gap-2">
+                    <img src="assets/Group 127.png" alt="">
+                    <p>admin@ultrasounddiagnostic.co.uk</p>
+                </div>
+
+
+                <div class="mt-8 flex gap-5">
+                    <button class="bg-[linear-gradient(90deg,#0E0F3D_15%,#2F6080_25%,#4DACD4_35%)] py-2 px-6 rounded-full text-white font-semibold text-[20px] flex items-center gap-2  hover:bg-none duration-400 border-2 border-transparent hover:border-2 hover:border-[#0E0F3D] transition-opacity cursor-pointer group duration-300 transition-all bg-clip-padding
+                hover:text-[#0E0F3D] ">
+                        Contact Us
+                        <img src="assets/right-arrow-svgrepo-com 2.png" alt="Right Arrow"
+                            class="group-hover:invert transition-all">
+                    </button>
+                    <button
+                        class="py-3 px-6 rounded-full text-[20px] text-[#0E0F3D] font-semibold border-2 border-[#0E0F3D] flex items-center gap-2 hover:bg-[linear-gradient(90deg,#0E0F3D_15%,#2F6080_25%,#4DACD4_35%)] hover:text-white transition-colors cursor-pointer group hover:border-transparent duration-300 transition-all bg-clip-padding">
+                        Meet The Team
+                        <img src="assets/right-arrow-svgrepo-com 2 (1).png" alt="Right Arrow"
+                            class="group-hover:brightness-0 group-hover:invert transition-all">
+                    </button>
+                </div>
+
+            </div>
+
+        </header>
+
+    </section>
+
+
+    <section class="my-20 mx-20">
+        <div class="flex items-center gap-3 ">
+            <img src="assets/Vector (3).png" alt="" class="h-[22px] w-[22px]">
+            <p class="font-[800] text-[18px]">Back to meet the team</p>
+        </div>
+        <div
+            class=" mt-3 bg-[linear-gradient(90deg,#0E0F3D_10%,#135269_50%,#0E0F3D_100%)] h-auto rounded-2xl relative overflow-hidden">
+            <div class="absolute -right-40 rotate-90 h-full z-0">
+                <img src="assets/bg-design.png" alt="" class="h-full object-cover">
+            </div>
+            <div class="absolute -left-40 -rotate-70 h-full z-0">
+                <img src="assets/bg-design.png" alt="" class="h-full object-cover">
+            </div>
+            <!-- Main Content -->
+            <div class="flex  items-center my-10 mx-20 gap-5 ">
+                <div
+                    class="z-50 bg-[linear-gradient(180deg,#F7941F,#DCF2F6)] h-80 w-80 rounded-full flex items-center  justify-center">
+                    <img src="assets/Member4.png" alt="" class="h-[98%] rounded-full border-2 border-transparent ">
+                </div>
+                <div class="py-5 text-[#FFFFFF] flex flex-col gap-4">
+                    <h1 class="text-[60px] font-bold">Lydia Mujuru</h1>
+                    <p class="text-[20px] ">Operations Director
+                    <div class="bg-[#FFFFFF] h-[1px] w-[100px]"></div>
+                    </p>
+
+                    <div>
+                        <button class="bg-[#FFFFFF66] py-2 px-4 flex items-center gap-2 rounded-full">
+                            <img src="assets/mdi_linkedin.png" alt="">
+                            LinkedIn
+                        </button>
+                    </div>
+                    <div class="flex items-center gap-5">
+                        <div class="flex gap-2 items-center">
+                            <img src="assets/streamline-sharp_star-badge-solid.png" alt="">
+                            <p>MSc in Data Analytics and Operational Management</p>
+                        </div>
+                        <div class="flex gap-2 items-center">
+                            <img src="assets/fa7-solid_users.png" alt="">
+                            <p>BA (Hons) Healthcare Management</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About section -->
+    <section class="mx-60 mb-20">
+        <h1
+            class=" md:text-[60px] text-[20px]  font-[800] bg-[linear-gradient(100deg,#0E0F3D_15%,#2F6090_25%,#4DACD4_45%,#B8B99A_59%,#F7941F_100%)] bg-clip-text text-transparent m-0 leading-none inline ">
+            About Lydia Mujuru
+        </h1>
+        <div class="flex flex-col gap-5 mt-5 text-[20px] font-medium">
+            <p>Lydia is the CQC Registered Manager and Operations Director of Universal Ultrasound Diagnostics.</p>
+            <p>Lydia's experience spans the NHS, the private sector, assisted living facilities, care homes, and domiciliary
+                care, which provided her with a diverse range of knowledge in healthcare management and administration and
+                gave her the opportunity to demonstrate her flexibility, leadership, and managerial skills. Her professional
+            path is characterised by her noteworthy responsibilities and successes.</p>
+            <p>Her passion for healthcare started when she was 27 years old. Watching her brother in the ICU being cared for until his death and having experienced two miscarriages before giving birth to her two boys inspired her to help others. Lydia strives to make a difference, set an example and motivate others</p>
+            <p>Lydia worked at <span class="font-bold">Birmingham Women's and Children's NHS Foundation Trust for nine</span> years, rising from a receptionist to Assistant Operations Manager. She worked in various departments including maternity wards, baby clinic, neonatal intensive care unit and radiology. She has vast experience in radiology, with a focus on paediatrics, gynaecology, obstetrics, fertility, and diagnostic scans. Her ability to adjust to changing circumstances and dynamic scenarios shows her resilience in the face of adversity. Taking the responsibility to learn from mistakes is indicative of her strong and adaptable managerial style.</p>
+            <p>One of Lydia's significant achievements was developing a computerised appointment system for Birmingham Women's and Children's NHS Foundation Trust. This system expedited appointment scheduling in accordance with national standards and enhanced patient safety by managing demand and capacity. When personnel constraints made it impossible to fulfil the 2-week oncology route targets, she worked on weekends and evenings to significantly reduce the waiting lists.</p>
+            <p>Lydia is not limited to providing medical care. In the private sector, she demonstrated her skills in finance, human resources, and customer service. Lydia's expertise extends to strong project management skills. Lydia is the founder of Universal Ultrasound Diagnostics Ltd, a company she formed from inception. Lydia believes in early diagnosis, the prevention of diseases and health promotion. She prides herself in being able to provide patients with peace of mind through team-led delivery of high-quality, patient-centred service in a caring, respectful, and compassionate environment.</p>
+            <p>Her extensive qualifications also include an array of diplomas in business and professional administration, computers, advanced health and social care and finance.</p>
+        </div>
+
+    </section>
+
+    <section class="py-20 px-20 text-center bg-[#EEF7FB]">
+        <h1
+            class=" md:text-[60px] text-[20px]  font-[800] bg-[linear-gradient(100deg,#0E0F3D_15%,#2F6090_25%,#4DACD4_45%,#B8B99A_59%,#F7941F_100%)] bg-clip-text text-transparent m-0 leading-none inline ">
+            Qualifications
+        </h1>
+        <div class="grid grid-cols-4 gap-6 px-3 py-5 mt-10">
+            <div class="bg-white rounded-2xl flex flex-col gap-3 items-center py-6 px-10 shadow-md">
+                <img src="assets/qualificationIcon1.png" alt="" class="bg-[#EEF7FB] p-3 rounded-lg mb-5">
+                <p class="text-[20px] font-semibold">MSc in Data Analytics and Operational Management (Distinction)</p>
+            </div>
+            <div class="bg-white rounded-2xl flex flex-col gap-3 items-center py-6 px-10 shadow-md">
+                <img src="assets/qualificationIcon2.png" alt="" class="bg-[#EEF7FB] p-3 rounded-lg mb-5">
+                <p class="text-[20px] font-semibold">BA (Hons) Healthcare Management Degree (1st Class)</p>
+            </div>
+            <div class="bg-white rounded-2xl flex flex-col gap-3 items-center py-6 px-10 shadow-md">
+                <img src="assets/qualificationIcon3.png" alt="" class="bg-[#EEF7FB] p-3 rounded-lg mb-5">
+                <p class="text-[20px] font-semibold">Level 5 Diploma in Leadership and Management</p>
+            </div>
+            <div class="bg-white rounded-2xl flex flex-col gap-3 items-center py-6 px-10 shadow-md">
+                <img src="assets/qualificationIcon4.png" alt="" class="bg-[#EEF7FB] p-3 rounded-lg mb-5">
+                <p class="text-[20px] font-semibold">Level 3 Advanced Health and Social Care Diploma</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="mb-30">
+        <div class="mt-30 mx-50 bg-[#08407B]  rounded-3xl relative overflow-hidden">
+            <div class="absolute -right-30 rotate-90 h-full z-0">
+                <img src="assets/bg-design.png" alt="" class="h-full object-cover">
+            </div>
+            <div class="absolute -left-30 -rotate-70 h-full z-0">
+                <img src="assets/bg-design.png" alt="" class="h-full object-cover">
+            </div>
+            <!-- Main Content -->
+            <div class="py-10 px-10">
+                <div class="text-white flex justify-center items-center gap-3">
+                    <div class="w-30 h-[1px] bg-white"></div>
+                    <p class="text-[24px]">ACCREDITED & TRUSTED</p>
+                    <div class="w-30 h-[1px] bg-white"></div>
+                </div>
+                <div class="grid grid-cols-9 items-center mt-5">
+                    <img src="assets/icon1.png" alt="" class="h-20 z-20">
+                    <div class="h-18 w-[1px] bg-white ml-15"></div>
+                    <img src="assets/icon2.png" alt="" class="h-20">
+                    <div class="h-18 w-[1px] bg-white ml-15"></div>
+                    <img src="assets/icon3.png" alt="" class="h-20">
+                    <div class="h-18 w-[1px] bg-white ml-15"></div>
+                    <img src="assets/icon4.png" alt="" class="h-20">
+                    <div class="h-18 w-[1px] bg-white ml-15"></div>
+                    <img src="assets/icon5.png" alt="" class="h-20 z-20">
+                </div>
+                <!-- Down Bars -->
+                <div class="flex justify-between items-center px-10 py-3">
+                    <div class="w-15 h-[1px] bg-white"></div>
+                    <div class="w-15 h-[1px] bg-white"></div>
+                    <div class="w-15 h-[1px] bg-white"></div>
+                    <div class="w-15 h-[1px] bg-white"></div>
+                    <div class="w-15 h-[1px] bg-white"></div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="footer">
+        <div class="bg-[#00213B] w-full relative">
+
+            <div class="grid grid-cols-[1fr_3fr] gap-10  text-white pt-20 px-20">
+
+                <div class=" flex flex-col gap-3 ">
+                    <img src="assets/logo.png" alt="" class="h-[103px] p-4 bg-[#FFFFFF] rounded-lg w-[251px]">
+                    <p>Providing private Ultrasound scans with compassion, advanced technology and expert care. Your
+                        health is our priority.</p>
+                    <div class="flex gap-5">
+                        <img src="assets/Frame 19 (1).png" alt="" class=" h-[90px] p-2 bg-[#FFFFFFE5] rounded-lg">
+                        <img src="assets/Frame 19.png" alt="" class="h-[90px] p-2 bg-[#FFFFFFE5] rounded-lg">
+                    </div>
+                    <p>Follow Us</p>
+                    <div class="flex gap-3 items-center">
+                        <img src="assets/Group 62.png" alt="" class="p-2 rounded-full bg-[#204158]">
+                        <img src="assets/Group 61.png" alt="" class="p-2 rounded-full bg-[#204158]">
+                        <img src="assets/ri_facebook-fill.png" alt="" class="p-2 rounded-full bg-[#204158]">
+                    </div>
+
+                </div>
+                <div class=" grid grid-cols-[1.5fr_1fr_1fr_1fr_1fr] gap-8">
+
+                    <div class="flex flex-col gap-4">
+                        <div class="flex gap-3 items-center">
+                            <img src="assets/Group 39.png" alt="">
+                            <p class="text-[20px] font-bold">Find Us</p>
+                        </div>
+                        <p>10c The Green, Kings Norton, Birmingham, B38 8SD</p>
+                        <div class="flex gap-2 items-center">
+                            <img src="assets/ic_baseline-phone.png" alt="">
+                            <p>0121 392 3112</p>
+                        </div>
+                        <div class="flex gap-2 items-center">
+                            <img src="assets/tabler_mail.png" alt="">
+                            <p>admin@ultrasounddiagnostic.co.uk</p>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col gap-4">
+                        <div class="flex gap-3 items-center">
+                            <img src="assets/hearticon.png" alt="">
+                            <p class="text-[20px] font-bold">Scans</p>
+                        </div>
+                        <p>Diagnostic Scans</p>
+                        <p>Paediatric Scans</p>
+                        <p>Pregnancy Scans</p>
+                        <p>Fertility Scans </p>
+                    </div>
+
+
+                    <div class="flex flex-col gap-4">
+                        <div class="flex gap-3 items-center">
+                            <img src="assets/mingcute_link-fill.png" alt="">
+                            <p class="text-[20px] font-bold">Quick Links</p>
+                        </div>
+                        <p>Pregnancy Digital Bundle</p>
+                        <p> Meet The Team</p>
+                        <p> Wellness Clinic</p>
+                        <p>Sonography Mentorship</p>
+                    </div>
+
+
+                    <div class="flex flex-col gap-4">
+                        <div class="flex gap-3 items-center">
+                            <img src="assets/mdi_legal.png" alt="">
+                            <p class="text-[20px] font-bold">Legal</p>
+                        </div>
+                        <p>Complaints Procedure</p>
+                        <p> Terms and Conditions</p>
+                        <p>Clinical Safety Policy</p>
+                        <p>Equality and Diversity Policy</p>
+                        <p>Modern Slavery Policy</p>
+                        <p>Digital Products Refund Policy</p>
+                        <p>and Terms and Conditions</p>
+                        <p>Company Number 14186755</p>
+                    </div>
+
+
+                    <div class="flex flex-col gap-4">
+                        <div class="flex gap-3 items-center">
+                            <img src="assets/Vector (1).png" alt="">
+                            <p class="text-[20px] font-bold">Help Us Improve</p>
+                        </div>
+                        <p>Leave a Review on Yell</p>
+                        <p> Leave a Review on Google My Business</p>
+                        <p>Leave a Review on Facebook</p>
+                        <p>A feedback form will be included in your appointment emails and we would welcome your
+                            feedback.</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="absolute bottom-22 left-80">
+                <p
+                    class="text-[20px] bg-[linear-gradient(90deg,#FFFFFF_25%,#2F6090_35%,#4DACD4_55%,#B8B99A_60%,#F7941F_100%)] leading-tight inline bg-clip-text text-transparent font-bold">
+                    Trusted Partnerships Supporting Your Health</p>
+
+                <div class="flex justify-between items-center gap-9">
+                    <img src="assets/image 6.png" alt="">
+                    <img src="assets/image 7.png" alt="">
+                    <img src="assets/image 8.png" alt="">
+                    <img src="assets/image 9.png" alt="">
+                    <img src="assets/image 10.png" alt="">
+                </div>
+            </div>
+
+            <div class="text-white pt-10">
+                <div class="h-[0.08px] bg-[#24445D] w-full"></div>
+                <div class="flex justify-between items-center  px-10 py-5">
+                    <div>
+                        <p>© 2026 Universal Ultrasound Group. All Rights Reserved.</p>
+                    </div>
+                    <div class="flex gap-2 items-center">
+                        <P>Sitemap</P>
+                        <div class="w-[1px] h-5 bg-white"></div>
+                        <p>Privacy Policy</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
