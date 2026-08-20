@@ -12,16 +12,16 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body class="font-fustat text-[#135269]">
+<body class="font-fustat text-[#135269] overflow-x-hidden">
 
-    <section id="hero-section" class="relative w-full min-h-[50%] overflow-hidden">
+    <section id="hero-section" class="relative w-full min-h-[50%] md:overflow-hidden">
 
         <!-- Background Layers -->
         <div id="hero-background" class="absolute inset-0 -z-20">
             <!-- Base background color -->
             <div class="absolute inset-0 opacity-50 bg-[#AEE1EA]"></div>
             <!-- Background image -->
-            <img src="assets/section1bg.png" alt="Background" class=" opacity-40">
+            <img src="assets/section1bg.png" alt="Background" class=" opacity-40 h-full w-full object-cover object-top">
         </div>
 
 
@@ -53,80 +53,89 @@
             </div>
 
             <!-- Navigation -->
-            <nav
+           <nav
                 class="flex justify-between items-center md:px-10 px-3 bg-[#FFFFFF73] rounded-full md:mx-10 mx-2 md:py-4 py-2 shadow-sm backdrop-blur-sm">
                 <div>
                     <img src="assets/logo.png" alt="Universal Ultrasound Diagnostics Logo"
                         class="md:h-[50px] h-[40px] md:w-auto">
                 </div>
                 <div id="nav_links"
-                    class=" md:flex md:flex-row flex-col md:static absolute items-center md:gap-6 top-13 right-0 md:bg-transparent bg-[#FFFFFF9E] md:backdrop-blur-none backdrop-blur-md md:px-0 px-5 md:py-0 py-4 md:translate-x-0 translate-x-full md:opacity-100 opacity-0 transition-all duration-500 ease-in-out md:h-0 h-screen ">
+                    class=" md:flex md:flex-row flex-col md:static absolute items-center md:gap-6 -top-20 -right-2 md:bg-transparent bg-[#FFFFFFE6] md:backdrop-blur-none backdrop-blur-md md:px-0 px-5  md:py-0 py-6 md:translate-x-0 translate-x-full md:opacity-100 opacity-0 transition-all duration-500 ease-in-out md:h-0 md:h-auto h-screen">
                     
-                    <a href="#" class="hover:opacity-80 transition-opacity">
-                        <div class="flex items-center gap-1">
-                            <p class="font-bold text-[14px]">Diagnostic scans</p>
-                            <img src="assets/Vector.png" alt="Dropdown">
-                        </div>
-                    </a>
+                    <div id="cross2" class="md:hidden flex items-center justify-between mb-10">
+                        <img src="assets/Vector (2).png" alt="" class="cursor-pointor">
+                        <button  class=" menubar_mobile focus:outline-none cursor-pointer ">
+                            <img src="assets/hamburger.png" alt="Menu" class="h-8">
+                        </button>
+                     </div> 
+                    <div class=" flex md:flex-row flex-col gap-6">
+                        <a href="#" class="hover:opacity-80 transition-opacity ">
+                            <div class="flex items-center gap-1">
+                                <p class="font-bold text-[14px]">Diagnostic scans</p>
+                                <img src="assets/Vector.png" alt="Dropdown">
+                            </div>
+                        </a>
+    
+                        <a href="#" class="hover:opacity-80 transition-opacity">
+                            <p class="font-bold text-[14px]">Paediatric scans</p>
+                        </a>
+    
+                        <a href="#" class="hover:opacity-80 transition-opacity">
+                            <p class="font-bold text-[14px]">Pregnancy scans</p>
+                        </a>
+    
+                        <a href="#" class="hover:opacity-80 transition-opacity">
+                            <p class="font-bold text-[14px]">Pregnancy digital bundle</p>
+                        </a>
+    
+                        <a href="#" class="hover:opacity-80 transition-opacity">
+                            <div class="flex items-center gap-1">
+                                <p class="font-bold text-[14px]">Fertility scans</p>
+                                <img src="assets/Vector.png" alt="Dropdown">
+                            </div>
+                        </a>
+    
+                        <a href="/Team.html" class="hover:opacity-80  transition-opacity">
+                            <div class="flex items-center gap-1">
+                                <p class="font-bold text-[14px]">Meet the team</p>
+                                <img src="assets/Vector.png" alt="Dropdown">
+                            </div>
+                        </a>
+    
+                        <a href="#" class="hover:opacity-80 transition-opacity">
+                            <div class="flex items-center gap-1">
+                                <p class="font-bold text-[14px]">Wellness clinic</p>
+                                <img src="assets/Vector.png" alt="Dropdown">
+                            </div>
+                        </a>
+    
+                        <a href="#" class="hover:opacity-80 transition-opacity">
+                            <p class="font-bold text-[14px] ">Sonography mentorship</p>
+                        </a>
+                    </div> 
 
-                    <a href="#" class="hover:opacity-80 transition-opacity">
-                        <p class="font-bold text-[14px]">Paediatric scans</p>
-                    </a>
-
-                    <a href="#" class="hover:opacity-80 transition-opacity">
-                        <p class="font-bold text-[14px]">Pregnancy scans</p>
-                    </a>
-
-                    <a href="#" class="hover:opacity-80 transition-opacity">
-                        <p class="font-bold text-[14px]">Pregnancy digital bundle</p>
-                    </a>
-
-                    <a href="#" class="hover:opacity-80 transition-opacity">
-                        <div class="flex items-center gap-1">
-                            <p class="font-bold text-[14px]">Fertility scans</p>
-                            <img src="assets/Vector.png" alt="Dropdown">
-                        </div>
-                    </a>
-
-                    <a href="/Team.html" class="hover:opacity-80  text-[#F7941F] transition-opacity">
-                        <div class="flex items-center gap-1">
-                            <p class="font-bold text-[14px]">Meet the team</p>
-                            <img src="assets/orangeVector.png" alt="Dropdown">
-                        </div>
-                    </a>
-
-                    <a href="#" class="hover:opacity-80 transition-opacity">
-                        <div class="flex items-center gap-1">
-                            <p class="font-bold text-[14px]">Wellness clinic</p>
-                            <img src="assets/Vector.png" alt="Dropdown">
-                        </div>
-                    </a>
-
-                    <a href="#" class="hover:opacity-80 transition-opacity">
-                        <p class="font-bold text-[14px] ">Sonography mentorship</p>
-                    </a>
                 </div>
 
                 <!-- menu bar for desktop view -->
-                <button id="menubar" class="menubarIcon focus:outline-none cursor-pointer md:block hidden">
+                <button  class="menubar_desktop focus:outline-none cursor-pointer md:block hidden cursor-pointer">
                     <img src="assets/hamburger.png" alt="Menu" class="h-8">
                 </button>
 
                 <!-- Menu bar for mobile view  -->
-                <button id="menubar2" class="focus:outline-none cursor-pointer md:hidden ">
+                <button id="menubar2" class="focus:outline-none cursor-pointer md:hidden cursor-pointer ">
                     <img src="assets/hamburger.png" alt="Menu" class="h-8">
                 </button>
             </nav>
 
             <!-- hidden toggle menu -->
             <div id="hiddenMenu"
-                class="toggleMenu fixed z-[100] top-0 right-0 px-5 py-10 bg-[#FFFFFF9E] backdrop-blur-md rounded-2xl flex flex-col items-start gap-6 translate-x-full opacity-0 transition-all duration-500 ease-in-out h-screen">
+                class="toggleMenu fixed z-[100] top-0 right-0 px-5 py-10 bg-[#FFFFFF9E] backdrop-blur-md rounded-2xl flex flex-col items-start gap-6 translate-x-full opacity-0 transition-all duration-500 ease-in-out h-screen w-full md:w-[450px]">
                 <div id="cross">
                     <img src="assets/Vector (2).png" alt="">
                 </div>
                 <img src="assets/logo.png" alt="" class="h-[73px] ml-22">
                 <div class="flex items-center gap-2">
-                    <img src="assets/Group 125.png  " alt="">
+                    <img src="assets/Group 125.png" alt="">
                     <p>10c The Green, Kings Norton, Birmingham, B38 8SD</p>
                 </div>
                 <div class="flex items-center gap-2">
@@ -140,18 +149,17 @@
 
 
                 <div class="mt-8 flex gap-5">
-                    <button class="bg-[linear-gradient(90deg,#0E0F3D_15%,#2F6080_25%,#4DACD4_35%)] py-2 px-6 rounded-full text-white font-semibold text-[20px] flex items-center gap-2  hover:bg-none duration-400 border-2 border-transparent hover:border-2 hover:border-[#0E0F3D] transition-opacity cursor-pointer group duration-300 transition-all bg-clip-padding
-                hover:text-[#0E0F3D] ">
+                    <a href="#" class="bg-[linear-gradient(90deg,#0E0F3D_15%,#2F6080_25%,#4DACD4_35%)] py-2 md:px-6 px-4 rounded-full text-white font-semibold text-[20px] flex items-center gap-2  hover:bg-none duration-400 border-2 border-transparent hover:border-2 hover:border-[#0E0F3D] transition-opacity cursor-pointer group duration-300 transition-all bg-clip-padding hover:text-[#0E0F3D] ">
                         Contact Us
                         <img src="assets/right-arrow-svgrepo-com 2.png" alt="Right Arrow"
                             class="group-hover:invert transition-all">
-                    </button>
-                    <button
-                        class="py-3 px-6 rounded-full text-[20px] text-[#0E0F3D] font-semibold border-2 border-[#0E0F3D] flex items-center gap-2 hover:bg-[linear-gradient(90deg,#0E0F3D_15%,#2F6080_25%,#4DACD4_35%)] hover:text-white transition-colors cursor-pointer group hover:border-transparent duration-300 transition-all bg-clip-padding">
+                    </a>
+                    <a href="#"
+                        class="md:py-3 py-1 md:px-6 px-4 rounded-full md:text-[20px] text-[#0E0F3D] font-semibold border-2 border-[#0E0F3D] flex items-center gap-2 hover:bg-[linear-gradient(90deg,#0E0F3D_15%,#2F6080_25%,#4DACD4_35%)] hover:text-white transition-colors cursor-pointer group hover:border-transparent duration-300 transition-all bg-clip-padding">
                         Meet The Team
                         <img src="assets/right-arrow-svgrepo-com 2 (1).png" alt="Right Arrow"
                             class="group-hover:brightness-0 group-hover:invert transition-all">
-                    </button>
+                    </a>
                 </div>
 
             </div>
@@ -179,7 +187,7 @@
             <!-- Main Content -->
             <div class="flex md:flex-row flex-col items-center my-10 md:mx-20 gap-5 ">
                 <div
-                    class="z-50 bg-[linear-gradient(180deg,#F7941F,#DCF2F6)] h-80 w-80 rounded-full flex items-center  justify-center">
+                    class="z-40 bg-[linear-gradient(180deg,#F7941F,#DCF2F6)] h-80 w-80 rounded-full flex items-center  justify-center">
                     <img src="assets/Member4.png" alt="" class="h-[98%] rounded-full border-2 border-transparent ">
                 </div>
                 <div class="py-5 md:px-0 px-5 text-[#FFFFFF] flex flex-col gap-4">

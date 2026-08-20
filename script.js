@@ -1,5 +1,5 @@
-let menubar_desktop = document.querySelector("#menubar_desktop")
-let menubar_mobile = document.querySelector("#menubar_mobile")
+let menubar_desktop = document.querySelector(".menubar_desktop")
+let menubar_mobile = document.querySelector(".menubar_mobile")
 let toggleMenu = document.querySelector(".toggleMenu")
 let cross = document.querySelector("#cross")
 let cross2= document.querySelector("#cross2")
