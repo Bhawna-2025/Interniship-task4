@@ -26,7 +26,7 @@
 
 
         <!-- Header containing Top Bar and Navigation -->
-        <header class="relative z-50 w-full md:pt-5 md:pb-10 pt-2">
+        <header class="relative z-50 w-full md:pt-5 md:pb-10 pb-5 pt-2">
 
             <div class="flex justify-between items-center md:px-20 px-5 pb-5">
                 <div class="flex md:flex-row flex-col gap-2">
@@ -54,61 +54,62 @@
 
             <!-- Navigation -->
             <nav
-                class="flex justify-between items-center md:px-10 px-3 bg-[#FFFFFF73] rounded-full md:mx-19 mx-2 md:py-4 py-2 shadow-sm backdrop-blur-sm">
+                class="flex justify-between items-center md:px-10 px-3 bg-[#FFFFFF73] rounded-full md:mx-10 mx-2 md:py-4 py-2 shadow-sm backdrop-blur-sm">
                 <div>
                     <img src="assets/logo.png" alt="Universal Ultrasound Diagnostics Logo"
-                        class="md:h-[73px] h-[40px] md:w-auto">
+                        class="md:h-[50px] h-[40px] md:w-auto">
                 </div>
                 <div id="nav_links"
-                    class=" md:flex md:flex-row flex-col md:static  absolute  items-center gap-8 top-13 right-0 md:bg-transparent bg-[#FFFFFF9E] md:backdrop-blur-none backdrop-blur-md md:px-0 px-5 md:py-0 py-4 md:translate-x-0 translate-x-full md:opacity-100 opacity-0 transition-all duration-500 ease-in-out md:h-0 h-screen ">
+                    class=" md:flex md:flex-row flex-col md:static absolute items-center md:gap-6 top-13 right-0 md:bg-transparent bg-[#FFFFFF9E] md:backdrop-blur-none backdrop-blur-md md:px-0 px-5 md:py-0 py-4 md:translate-x-0 translate-x-full md:opacity-100 opacity-0 transition-all duration-500 ease-in-out md:h-0 h-screen ">
+                    
                     <a href="#" class="hover:opacity-80 transition-opacity">
                         <div class="flex items-center gap-1">
-                            <p class="font-bold">Diagnostic scans</p>
+                            <p class="font-bold text-[14px]">Diagnostic scans</p>
                             <img src="assets/Vector.png" alt="Dropdown">
                         </div>
                     </a>
 
                     <a href="#" class="hover:opacity-80 transition-opacity">
-                        <p class="font-bold">Paediatric scans</p>
+                        <p class="font-bold text-[14px]">Paediatric scans</p>
                     </a>
 
                     <a href="#" class="hover:opacity-80 transition-opacity">
-                        <p class="font-bold">Pregnancy scans</p>
+                        <p class="font-bold text-[14px]">Pregnancy scans</p>
                     </a>
 
                     <a href="#" class="hover:opacity-80 transition-opacity">
-                        <p class="font-bold">Pregnancy digital bundle</p>
+                        <p class="font-bold text-[14px]">Pregnancy digital bundle</p>
                     </a>
 
                     <a href="#" class="hover:opacity-80 transition-opacity">
                         <div class="flex items-center gap-1">
-                            <p class="font-bold">Fertility scans</p>
+                            <p class="font-bold text-[14px]">Fertility scans</p>
                             <img src="assets/Vector.png" alt="Dropdown">
                         </div>
                     </a>
 
-                    <a href="#" class="hover:opacity-80 text-[#F7941F] transition-opacity">
+                    <a href="/Team.html" class="hover:opacity-80  text-[#F7941F] transition-opacity">
                         <div class="flex items-center gap-1">
-                            <p class="font-bold">Meet the team</p>
-                            <img src="assets/orangeVector.png" alt="Dropdown" class="">
+                            <p class="font-bold text-[14px]">Meet the team</p>
+                            <img src="assets/orangeVector.png" alt="Dropdown">
                         </div>
                     </a>
 
                     <a href="#" class="hover:opacity-80 transition-opacity">
                         <div class="flex items-center gap-1">
-                            <p class="font-bold">Wellness clinic</p>
+                            <p class="font-bold text-[14px]">Wellness clinic</p>
                             <img src="assets/Vector.png" alt="Dropdown">
                         </div>
                     </a>
 
                     <a href="#" class="hover:opacity-80 transition-opacity">
-                        <p class="font-bold">Sonography mentorship</p>
+                        <p class="font-bold text-[14px] ">Sonography mentorship</p>
                     </a>
                 </div>
 
                 <!-- menu bar for desktop view -->
-                <button id="menubar" class="menubarIcon focus:outline-none cursor-pointer md:flex hidden">
-                    <img src="assets/hamburger.png" alt="Menu">
+                <button id="menubar" class="menubarIcon focus:outline-none cursor-pointer md:block hidden">
+                    <img src="assets/hamburger.png" alt="Menu" class="h-8">
                 </button>
 
                 <!-- Menu bar for mobile view  -->
@@ -160,44 +161,46 @@
     </section>
 
 
-    <section class="my-20 mx-20">
-        <div class="flex items-center gap-3 ">
-            <img src="assets/Vector (3).png" alt="" class="h-[22px] w-[22px]">
-            <p class="font-[800] text-[18px]">Back to meet the team</p>
-        </div>
+    <section class="md:my-20 my-10 md:mx-20 ">
+        <a href="/Team.html">
+            <div class="flex items-center gap-3 md:ml-0 ml-2 ">
+                <img src="assets/Vector (3).png" alt="" class="h-[22px] w-[22px]">
+                <p class="font-[800] text-[18px]">Back to meet the team</p>
+            </div>
+        </a>
         <div
-            class=" mt-3 bg-[linear-gradient(90deg,#0E0F3D_10%,#135269_50%,#0E0F3D_100%)] h-auto rounded-2xl relative overflow-hidden">
-            <div class="absolute -right-40 rotate-90 h-full z-0">
+            class=" mt-3 bg-[linear-gradient(90deg,#0E0F3D_10%,#135269_50%,#0E0F3D_100%)] h-auto md:rounded-2xl relative overflow-hidden">
+            <div class="md:block hidden absolute -right-40 rotate-90 h-full z-0">
                 <img src="assets/bg-design.png" alt="" class="h-full object-cover">
             </div>
-            <div class="absolute -left-40 -rotate-70 h-full z-0">
+            <div class="md:block hidden absolute -left-40 -rotate-70 h-full z-0">
                 <img src="assets/bg-design.png" alt="" class="h-full object-cover">
             </div>
             <!-- Main Content -->
-            <div class="flex  items-center my-10 mx-20 gap-5 ">
+            <div class="flex md:flex-row flex-col items-center my-10 md:mx-20 gap-5 ">
                 <div
                     class="z-50 bg-[linear-gradient(180deg,#F7941F,#DCF2F6)] h-80 w-80 rounded-full flex items-center  justify-center">
                     <img src="assets/Member4.png" alt="" class="h-[98%] rounded-full border-2 border-transparent ">
                 </div>
-                <div class="py-5 text-[#FFFFFF] flex flex-col gap-4">
-                    <h1 class="text-[60px] font-bold">Lydia Mujuru</h1>
+                <div class="py-5 md:px-0 px-5 text-[#FFFFFF] flex flex-col gap-4">
+                    <h1 class="md:text-[60px] text-[40px] font-bold">Lydia Mujuru</h1>
                     <p class="text-[20px] ">Operations Director
                     <div class="bg-[#FFFFFF] h-[1px] w-[100px]"></div>
                     </p>
 
-                    <div>
-                        <button class="bg-[#FFFFFF66] py-2 px-4 flex items-center gap-2 rounded-full">
+                    <div class="self-start">
+                        <a href="#" class="bg-[#FFFFFF66] md:py-2 py-1 md:px-4 px-2 flex items-center gap-2 rounded-full ">
                             <img src="assets/mdi_linkedin.png" alt="">
                             LinkedIn
-                        </button>
+                        </a>
                     </div>
-                    <div class="flex items-center gap-5">
+                    <div class="flex md:flex-row flex-col items-center  md:gap-5 gap-3">
                         <div class="flex gap-2 items-center">
                             <img src="assets/streamline-sharp_star-badge-solid.png" alt="">
-                            <p>MSc in Data Analytics and Operational Management</p>
+                            <p class="pl-4">MSc in Data Analytics and Operational Management</p>
                         </div>
-                        <div class="flex gap-2 items-center">
-                            <img src="assets/fa7-solid_users.png" alt="">
+                        <div class="flex gap-2 items-center ">
+                            <img src="assets/fa7-solid_users.png" alt="" class="pr-5">
                             <p>BA (Hons) Healthcare Management</p>
                         </div>
                     </div>
@@ -207,12 +210,12 @@
     </section>
 
     <!-- About section -->
-    <section class="mx-60 mb-20">
+    <section class="md:mx-60 mx-5 md:mb-20 mb-10">
         <h1
-            class=" md:text-[60px] text-[20px]  font-[800] bg-[linear-gradient(100deg,#0E0F3D_15%,#2F6090_25%,#4DACD4_45%,#B8B99A_59%,#F7941F_100%)] bg-clip-text text-transparent m-0 leading-none inline ">
+            class=" md:text-[60px] text-[30px]  font-[800] bg-[linear-gradient(100deg,#0E0F3D_15%,#2F6090_25%,#4DACD4_45%,#B8B99A_59%,#F7941F_100%)] bg-clip-text text-transparent m-0 leading-none inline ">
             About Lydia Mujuru
         </h1>
-        <div class="flex flex-col gap-5 mt-5 text-[20px] font-medium">
+        <div class="flex flex-col gap-5 mt-5 md:text-[18px] font-medium">
             <p>Lydia is the CQC Registered Manager and Operations Director of Universal Ultrasound Diagnostics.</p>
             <p>Lydia's experience spans the NHS, the private sector, assisted living facilities, care homes, and domiciliary
                 care, which provided her with a diverse range of knowledge in healthcare management and administration and
@@ -227,12 +230,12 @@
 
     </section>
 
-    <section class="py-20 px-20 text-center bg-[#EEF7FB]">
+    <section class="py-20 md:px-20 px-5 text-center bg-[#EEF7FB]">
         <h1
-            class=" md:text-[60px] text-[20px]  font-[800] bg-[linear-gradient(100deg,#0E0F3D_15%,#2F6090_25%,#4DACD4_45%,#B8B99A_59%,#F7941F_100%)] bg-clip-text text-transparent m-0 leading-none inline ">
+            class=" md:text-[60px] text-[40px]  font-[800] bg-[linear-gradient(100deg,#0E0F3D_15%,#2F6090_25%,#4DACD4_45%,#B8B99A_59%,#F7941F_100%)] bg-clip-text text-transparent m-0 leading-none inline ">
             Qualifications
         </h1>
-        <div class="grid grid-cols-4 gap-6 px-3 py-5 mt-10">
+        <div class="grid md:grid-cols-4 gap-6 px-3 py-5 mt-10">
             <div class="bg-white rounded-2xl flex flex-col gap-3 items-center py-6 px-10 shadow-md">
                 <img src="assets/qualificationIcon1.png" alt="" class="bg-[#EEF7FB] p-3 rounded-lg mb-5">
                 <p class="text-[20px] font-semibold">MSc in Data Analytics and Operational Management (Distinction)</p>
@@ -254,31 +257,31 @@
 
     </section>
 
-    <section class="mb-30">
-        <div class="mt-30 mx-50 bg-[#08407B]  rounded-3xl relative overflow-hidden">
-            <div class="absolute -right-30 rotate-90 h-full z-0">
+    <section class="md:mb-30">
+        <div class="md:block hidden mt-20 mx-50 bg-[#08407B]  rounded-2xl relative overflow-hidden">
+            <div class="absolute -right-40 rotate-90 h-full z-0">
                 <img src="assets/bg-design.png" alt="" class="h-full object-cover">
             </div>
-            <div class="absolute -left-30 -rotate-70 h-full z-0">
+            <div class="absolute -left-40 -rotate-70 h-full z-0">
                 <img src="assets/bg-design.png" alt="" class="h-full object-cover">
             </div>
             <!-- Main Content -->
-            <div class="py-10 px-10">
+            <div class="py-10 px-8">
                 <div class="text-white flex justify-center items-center gap-3">
                     <div class="w-30 h-[1px] bg-white"></div>
-                    <p class="text-[24px]">ACCREDITED & TRUSTED</p>
+                    <p class="text-[18px]">ACCREDITED & TRUSTED</p>
                     <div class="w-30 h-[1px] bg-white"></div>
                 </div>
-                <div class="grid grid-cols-9 items-center mt-5">
-                    <img src="assets/icon1.png" alt="" class="h-20 z-20">
-                    <div class="h-18 w-[1px] bg-white ml-15"></div>
-                    <img src="assets/icon2.png" alt="" class="h-20">
-                    <div class="h-18 w-[1px] bg-white ml-15"></div>
-                    <img src="assets/icon3.png" alt="" class="h-20">
-                    <div class="h-18 w-[1px] bg-white ml-15"></div>
-                    <img src="assets/icon4.png" alt="" class="h-20">
-                    <div class="h-18 w-[1px] bg-white ml-15"></div>
-                    <img src="assets/icon5.png" alt="" class="h-20 z-20">
+                <div class="flex items-center justify-between  items-center mt-5">
+                    <img src="assets/icon1.png" alt="" class="md:h-[100px] md:w-[190px]  z-20">
+                    <div class="h-18 w-[1px] bg-white mx-4"></div>
+                    <img src="assets/icon2.png" alt="" class="md:h-[100px] md:w-[190px]">
+                    <div class="h-18 w-[1px] bg-white"></div>
+                    <img src="assets/icon3.png" alt="" class="md:h-[100px] md:w-[190px]">
+                    <div class="h-18 w-[1px] bg-white"></div>
+                    <img src="assets/icon4.png" alt="" class="md:h-[90px] md:w-[180px] ">
+                    <div class="h-18 w-[1px] bg-white "></div>
+                    <img src="assets/icon5.png" alt="" class="md:h-[100px] md:w-[190px] z-20 ">
                 </div>
                 <!-- Down Bars -->
                 <div class="flex justify-between items-center px-10 py-3">
@@ -295,16 +298,15 @@
 
     <section id="footer">
         <div class="bg-[#00213B] w-full relative">
+            <div class="grid  md:grid-cols-[1fr_3fr]  gap-10 text-white pt-25 md:px-20 px-5">
 
-            <div class="grid grid-cols-[1fr_3fr] gap-10  text-white pt-20 px-20">
-
-                <div class=" flex flex-col gap-3 ">
-                    <img src="assets/logo.png" alt="" class="h-[103px] p-4 bg-[#FFFFFF] rounded-lg w-[251px]">
-                    <p>Providing private Ultrasound scans with compassion, advanced technology and expert care. Your
+                <div class=" flex flex-col md:place-items-start place-items-center md:gap-3 gap-5 ">
+                    <img src="assets/logo.png" alt="" class="md:h-[103px] h-[80px] p-4 bg-[#FFFFFF] rounded-lg md:w-[251px] w-[200px]">
+                    <p class="md:text-start text-center">Providing private Ultrasound scans with compassion, advanced technology and expert care. Your
                         health is our priority.</p>
                     <div class="flex gap-5">
-                        <img src="assets/Frame 19 (1).png" alt="" class=" h-[90px] p-2 bg-[#FFFFFFE5] rounded-lg">
-                        <img src="assets/Frame 19.png" alt="" class="h-[90px] p-2 bg-[#FFFFFFE5] rounded-lg">
+                        <img src="assets/Frame 19 (1).png" alt="" class=" md:h-[90px] h-[60px] p-2 bg-[#FFFFFFE5] rounded-lg">
+                        <img src="assets/Frame 19.png" alt="" class="md:h-[90px] h-[60px] p-2 bg-[#FFFFFFE5] rounded-lg">
                     </div>
                     <p>Follow Us</p>
                     <div class="flex gap-3 items-center">
@@ -314,12 +316,12 @@
                     </div>
 
                 </div>
-                <div class=" grid grid-cols-[1.5fr_1fr_1fr_1fr_1fr] gap-8">
+                <div class=" grid md:grid-cols-[1.5fr_1fr_1fr_1fr_1fr] gap-8">
 
-                    <div class="flex flex-col gap-4">
+                    <div class="flex flex-col md:gap-4 gap-2">
                         <div class="flex gap-3 items-center">
                             <img src="assets/Group 39.png" alt="">
-                            <p class="text-[20px] font-bold">Find Us</p>
+                            <p class="text-[18px] font-bold">Find Us</p>
                         </div>
                         <p>10c The Green, Kings Norton, Birmingham, B38 8SD</p>
                         <div class="flex gap-2 items-center">
@@ -328,14 +330,14 @@
                         </div>
                         <div class="flex gap-2 items-center">
                             <img src="assets/tabler_mail.png" alt="">
-                            <p>admin@ultrasounddiagnostic.co.uk</p>
+                            <a href="#" class="cursor-pointer">admin@ultrasounddiagnostic.co.uk</a>
                         </div>
                     </div>
 
-                    <div class="flex flex-col gap-4">
+                    <div class="flex flex-col md:gap-4 gap-2">
                         <div class="flex gap-3 items-center">
                             <img src="assets/hearticon.png" alt="">
-                            <p class="text-[20px] font-bold">Scans</p>
+                            <p class="text-[18px] font-bold">Scans</p>
                         </div>
                         <p>Diagnostic Scans</p>
                         <p>Paediatric Scans</p>
@@ -344,22 +346,22 @@
                     </div>
 
 
-                    <div class="flex flex-col gap-4">
+                    <div class="flex flex-col md:gap-4 gap-2">
                         <div class="flex gap-3 items-center">
                             <img src="assets/mingcute_link-fill.png" alt="">
-                            <p class="text-[20px] font-bold">Quick Links</p>
+                            <p class="text-[18px] font-bold">Quick Links</p>
                         </div>
-                        <p>Pregnancy Digital Bundle</p>
-                        <p> Meet The Team</p>
-                        <p> Wellness Clinic</p>
-                        <p>Sonography Mentorship</p>
+                        <a href="#" class="cursor-pointer">Pregnancy Digital Bundle</a>
+                        <a href="#" class="cursor-pointer"> Meet The Team</a>
+                        <a href="#" class="cursor-pointer"> Wellness Clinic</a>
+                        <a href="#" class="cursor-pointer">Sonography Mentorship</a>
                     </div>
 
 
-                    <div class="flex flex-col gap-4">
+                    <div class="flex flex-col md:gap-4 gap-2">
                         <div class="flex gap-3 items-center">
                             <img src="assets/mdi_legal.png" alt="">
-                            <p class="text-[20px] font-bold">Legal</p>
+                            <p class="text-[18px] font-bold">Legal</p>
                         </div>
                         <p>Complaints Procedure</p>
                         <p> Terms and Conditions</p>
@@ -372,10 +374,10 @@
                     </div>
 
 
-                    <div class="flex flex-col gap-4">
+                    <div class="flex flex-col md:gap-4 gap-2">
                         <div class="flex gap-3 items-center">
                             <img src="assets/Vector (1).png" alt="">
-                            <p class="text-[20px] font-bold">Help Us Improve</p>
+                            <p class="text-[18px] font-bold">Help Us Improve</p>
                         </div>
                         <p>Leave a Review on Yell</p>
                         <p> Leave a Review on Google My Business</p>
@@ -387,7 +389,7 @@
 
             </div>
 
-            <div class="absolute bottom-22 left-80">
+            <div class="md:block hidden absolute bottom-50 left-70">
                 <p
                     class="text-[20px] bg-[linear-gradient(90deg,#FFFFFF_25%,#2F6090_35%,#4DACD4_55%,#B8B99A_60%,#F7941F_100%)] leading-tight inline bg-clip-text text-transparent font-bold">
                     Trusted Partnerships Supporting Your Health</p>
@@ -403,13 +405,13 @@
 
             <div class="text-white pt-10">
                 <div class="h-[0.08px] bg-[#24445D] w-full"></div>
-                <div class="flex justify-between items-center  px-10 py-5">
+                <div class="flex justify-between items-center  md:px-10 px-3 py-5">
                     <div>
-                        <p>© 2026 Universal Ultrasound Group. All Rights Reserved.</p>
+                        <p class="md:text-[16px] text-[12px] opacity-80">© 2026 Universal Ultrasound Group. All Rights Reserved.</p>
                     </div>
-                    <div class="flex gap-2 items-center">
-                        <P>Sitemap</P>
-                        <div class="w-[1px] h-5 bg-white"></div>
+                    <div class="flex gap-2 items-center md:text-[16px] text-[12px] opacity-80">
+                        <P >Sitemap</P>
+                        <div class=" w-[1px] h-5 bg-white"></div>
                         <p>Privacy Policy</p>
                     </div>
                 </div>

@@ -26,15 +26,15 @@
         </div>
 
         <!-- Decorative Overlays -->
-        <div id="decorative-overlays" class="absolute inset-0 pointer-events-none -z-10">
+        <div id="decorative-overlays" class="absolute  inset-0 pointer-events-none -z-10">
             <!-- Left Gradient Blob -->
             <div id="overlay-1"
-                class="absolute top-50 left-0 h-[470px] w-[325px] rounded-full bg-[radial-gradient(ellipse_at_center,#AEE1EA_0%,rgba(174,225,234,0.75)_25%,rgba(174,225,234,0.4)_50%,rgba(174,225,234,0.12)_75%,transparent_100%)]">
+                class="hidden md:block absolute top-50 left-0 h-[470px] w-[325px] rounded-full bg-[radial-gradient(ellipse_at_center,#AEE1EA_0%,rgba(174,225,234,0.75)_25%,rgba(174,225,234,0.4)_50%,rgba(174,225,234,0.12)_75%,transparent_100%)]">
             </div>
 
             <!-- Right Gradient Blob -->
             <div id="overlay-2"
-                class="absolute top-70 right-0 h-[470px] w-[325px] rounded-full bg-[radial-gradient(ellipse_at_center,#AEE1EA_0%,rgba(174,225,234,0.75)_25%,rgba(174,225,234,0.4)_50%,rgba(174,225,234,0.12)_75%,transparent_100%)]">
+                class="md:block hidden absolute top-70 right-0 h-[470px] w-[325px] rounded-full bg-[radial-gradient(ellipse_at_center,#AEE1EA_0%,rgba(174,225,234,0.75)_25%,rgba(174,225,234,0.4)_50%,rgba(174,225,234,0.12)_75%,transparent_100%)]">
             </div>
 
             <!-- Rotated Shapes -->
@@ -67,7 +67,8 @@
                 <div class="flex md:flex-row flex-col  md:gap-7 gap-1 md:items-center ">
                     <div class="flex items-center gap-2">
                         <img src="assets/Group 108.png" alt="Phone">
-                        <p class="md:flex md:gap-2 hidden">Speak with our friendly team now! <span class="font-bold">0121 392 3112</span></p>
+                        <p class="md:flex md:gap-2 hidden">Speak with our friendly team now! <span
+                                class="font-bold">0121 392 3112</span></p>
                         <span class="font-bold md:hidden display text-[12px]">0121 392 3112</span>
                     </div>
                     <div class="flex items-center md:gap-2 gap-3">
@@ -80,69 +81,82 @@
 
             <!-- Navigation -->
             <nav
-                class="flex justify-between items-center md:px-10 px-3 bg-[#FFFFFF73] rounded-full md:mx-19 mx-2 md:py-4 py-2 shadow-sm backdrop-blur-sm">
+                class="flex justify-between items-center md:px-10 px-3 bg-[#FFFFFF73] rounded-full md:mx-10 mx-2 md:py-4 py-2 shadow-sm backdrop-blur-sm">
                 <div>
-                    <img src="assets/logo.png" alt="Universal Ultrasound Diagnostics Logo" class="md:h-[73px] h-[40px] md:w-auto">
+                    <img src="assets/logo.png" alt="Universal Ultrasound Diagnostics Logo"
+                        class="md:h-[50px] h-[40px] md:w-auto">
                 </div>
-                <div id="nav_links" class=" md:flex md:flex-row flex-col md:static  absolute  items-center gap-8 top-13 right-0 md:bg-transparent bg-[#FFFFFF9E] md:backdrop-blur-none backdrop-blur-md md:px-0 px-5 md:py-0 py-4 md:translate-x-0 translate-x-full md:opacity-100 opacity-0 transition-all duration-500 ease-in-out md:h-0 h-screen ">
-                    <a href="#" class="hover:opacity-80 transition-opacity">
-                        <div class="flex items-center gap-1">
-                            <p class="font-bold">Diagnostic scans</p>
-                            <img src="assets/Vector.png" alt="Dropdown">
-                        </div>
-                    </a>
+                <div id="nav_links"
+                    class=" md:flex md:flex-row flex-col md:static absolute items-center md:gap-6 -top-20 -right-2 md:bg-transparent bg-[#FFFFFFE6] md:backdrop-blur-none backdrop-blur-md md:px-0 px-5  md:py-0 py-6 md:translate-x-0 translate-x-full md:opacity-100 opacity-0 transition-all duration-500 ease-in-out md:h-0 h-screen ">
+                    
+                    <div id="cross2" class="md:hidden flex items-center justify-between mb-10">
+                        <img src="assets/Vector (2).png" alt="" class="cursor-pointor">
+                        <button id="menubar_mobile" class="menubarIcon focus:outline-none cursor-pointer ">
+                            <img src="assets/hamburger.png" alt="Menu" class="h-8">
+                        </button>
+                     </div> 
+                    <div class=" flex md:flex-row flex-col gap-6">
+                        <a href="#" class="hover:opacity-80 transition-opacity ">
+                            <div class="flex items-center gap-1">
+                                <p class="font-bold text-[14px]">Diagnostic scans</p>
+                                <img src="assets/Vector.png" alt="Dropdown">
+                            </div>
+                        </a>
+    
+                        <a href="#" class="hover:opacity-80 transition-opacity">
+                            <p class="font-bold text-[14px]">Paediatric scans</p>
+                        </a>
+    
+                        <a href="#" class="hover:opacity-80 transition-opacity">
+                            <p class="font-bold text-[14px]">Pregnancy scans</p>
+                        </a>
+    
+                        <a href="#" class="hover:opacity-80 transition-opacity">
+                            <p class="font-bold text-[14px]">Pregnancy digital bundle</p>
+                        </a>
+    
+                        <a href="#" class="hover:opacity-80 transition-opacity">
+                            <div class="flex items-center gap-1">
+                                <p class="font-bold text-[14px]">Fertility scans</p>
+                                <img src="assets/Vector.png" alt="Dropdown">
+                            </div>
+                        </a>
+    
+                        <a href="/Team.html" class="hover:opacity-80  transition-opacity">
+                            <div class="flex items-center gap-1">
+                                <p class="font-bold text-[14px]">Meet the team</p>
+                                <img src="assets/Vector.png" alt="Dropdown">
+                            </div>
+                        </a>
+    
+                        <a href="#" class="hover:opacity-80 transition-opacity">
+                            <div class="flex items-center gap-1">
+                                <p class="font-bold text-[14px]">Wellness clinic</p>
+                                <img src="assets/Vector.png" alt="Dropdown">
+                            </div>
+                        </a>
+    
+                        <a href="#" class="hover:opacity-80 transition-opacity">
+                            <p class="font-bold text-[14px] ">Sonography mentorship</p>
+                        </a>
+                    </div> 
 
-                    <a href="#" class="hover:opacity-80 transition-opacity">
-                        <p class="font-bold">Paediatric scans</p>
-                    </a>
-
-                    <a href="#" class="hover:opacity-80 transition-opacity">
-                        <p class="font-bold">Pregnancy scans</p>
-                    </a>
-
-                    <a href="#" class="hover:opacity-80 transition-opacity">
-                        <p class="font-bold">Pregnancy digital bundle</p>
-                    </a>
-
-                    <a href="#" class="hover:opacity-80 transition-opacity">
-                        <div class="flex items-center gap-1">
-                            <p class="font-bold">Fertility scans</p>
-                            <img src="assets/Vector.png" alt="Dropdown">
-                        </div>
-                    </a>
-
-                    <a href="/Team.html" class="hover:opacity-80  transition-opacity">
-                        <div class="flex items-center gap-1">
-                            <p class="font-bold">Meet the team</p>
-                            <img src="assets/Vector.png" alt="Dropdown">
-                        </div>
-                    </a>
-
-                    <a href="#" class="hover:opacity-80 transition-opacity">
-                        <div class="flex items-center gap-1">
-                            <p class="font-bold">Wellness clinic</p>
-                            <img src="assets/Vector.png" alt="Dropdown">
-                        </div>
-                    </a>
-
-                    <a href="#" class="hover:opacity-80 transition-opacity">
-                        <p class="font-bold">Sonography mentorship</p>
-                    </a>
                 </div>
 
                 <!-- menu bar for desktop view -->
-                <button id="menubar" class="menubarIcon focus:outline-none cursor-pointer md:flex hidden">
-                    <img src="assets/hamburger.png" alt="Menu">
+                <button id="menubar_desktop" class="menubarIcon focus:outline-none cursor-pointer md:block hidden cursor-pointer">
+                    <img src="assets/hamburger.png" alt="Menu" class="h-8">
                 </button>
 
                 <!-- Menu bar for mobile view  -->
-                 <button id="menubar2" class="focus:outline-none cursor-pointer md:hidden ">
-                        <img src="assets/hamburger.png" alt="Menu" class="h-8">
+                <button id="menubar2" class="focus:outline-none cursor-pointer md:hidden cursor-pointer ">
+                    <img src="assets/hamburger.png" alt="Menu" class="h-8">
                 </button>
             </nav>
 
             <!-- hidden toggle menu -->
-            <div id="hiddenMenu" class="toggleMenu fixed z-[100] top-0 right-0 px-5 py-10 bg-[#FFFFFF9E] backdrop-blur-md rounded-2xl flex flex-col items-start gap-6 translate-x-full opacity-0 transition-all duration-500 ease-in-out h-screen">
+            <div id="hiddenMenu"
+                class="toggleMenu fixed z-[100] top-0 right-0 px-5 py-10 bg-[#FFFFFF9E] backdrop-blur-md rounded-2xl flex flex-col items-start gap-6 translate-x-full opacity-0 transition-all duration-500 ease-in-out h-screen">
                 <div id="cross">
                     <img src="assets/Vector (2).png" alt="">
                 </div>
@@ -162,18 +176,18 @@
 
 
                 <div class="mt-8 flex gap-5">
-                    <button class="bg-[linear-gradient(90deg,#0E0F3D_15%,#2F6080_25%,#4DACD4_35%)] py-2 px-6 rounded-full text-white font-semibold text-[20px] flex items-center gap-2  hover:bg-none duration-400 border-2 border-transparent hover:border-2 hover:border-[#0E0F3D] transition-opacity cursor-pointer group duration-300 transition-all bg-clip-padding
+                    <a href="#" class="bg-[linear-gradient(90deg,#0E0F3D_15%,#2F6080_25%,#4DACD4_35%)] py-2 md:px-6 px-4 rounded-full text-white font-semibold md:text-[20px] text-[14px] flex items-center gap-2  hover:bg-none duration-400 border-2 border-transparent hover:border-2 hover:border-[#0E0F3D] transition-opacity cursor-pointer group duration-300 transition-all bg-clip-padding
                 hover:text-[#0E0F3D] ">
                         Contact Us
                         <img src="assets/right-arrow-svgrepo-com 2.png" alt="Right Arrow"
                             class="group-hover:invert transition-all">
-                    </button>
-                    <button
-                        class="py-3 px-6 rounded-full text-[20px] text-[#0E0F3D] font-semibold border-2 border-[#0E0F3D] flex items-center gap-2 hover:bg-[linear-gradient(90deg,#0E0F3D_15%,#2F6080_25%,#4DACD4_35%)] hover:text-white transition-colors cursor-pointer group hover:border-transparent duration-300 transition-all bg-clip-padding">
+                    </a>
+                    <a href="#"
+                        class="md:py-3 py-2 md:px-6 px-4 rounded-full md:text-[20px] text-[14px] text-[#0E0F3D] font-semibold border-2 border-[#0E0F3D] flex items-center gap-2 hover:bg-[linear-gradient(90deg,#0E0F3D_15%,#2F6080_25%,#4DACD4_35%)] hover:text-white transition-colors cursor-pointer group hover:border-transparent duration-300 transition-all bg-clip-padding">
                         Meet The Team
                         <img src="assets/right-arrow-svgrepo-com 2 (1).png" alt="Right Arrow"
                             class="group-hover:brightness-0 group-hover:invert transition-all">
-                    </button>
+                </a>
                 </div>
 
             </div>
@@ -183,23 +197,24 @@
         <!-- Main Hero Content -->
         <main class="relative z-20 flex flex-col justify-center items-center mt-12 pb-20">
 
-            <div class="text-center max-w-4xl px-10 py-10">
+            <div class="text-center max-w-4xl px-10 md:py-10">
                 <h1
-                    class="text-[110px] uppercase font-[800] bg-[linear-gradient(100deg,#0E0F3D_15%,#2F6090_25%,#4DACD4_45%,#B8B99A_59%,#F7941F_100%)] bg-clip-text text-transparent m-0 leading-none">
+                    class="md:text-[110px] text-[40px] uppercase font-[800] bg-[linear-gradient(100deg,#0E0F3D_15%,#2F6090_25%,#4DACD4_45%,#B8B99A_59%,#F7941F_100%)] bg-clip-text text-transparent m-0 leading-none">
                     Diagnostic
                 </h1>
                 <h2
-                    class="text-[40px] font-[800] bg-[linear-gradient(100deg,#0E0F3D_25%,#2F6090_25%,#4DACD4_45%,#B8B99A_60%,#F7941F_100%)] bg-clip-text text-transparent m-0 leading-tight">
+                    class="md:text-[40px] text-[15px] font-[800] bg-[linear-gradient(100deg,#0E0F3D_25%,#2F6090_25%,#4DACD4_45%,#B8B99A_60%,#F7941F_100%)] bg-clip-text text-transparent m-0 leading-tight">
                     Ultrasound Scans
                 </h2>
-                <p class="text-[20px] text-[#135269] font-medium mt-6 mx-auto max-w-2xl">
+                <p class="md:text-[20px] text-[14px] text-[#135269] font-medium mt-6 mx-auto max-w-2xl">
                     Private and affordable ultrasound scans for every member of your family— delivered with compassion,
                     inclusivity, and patient-centred care.
                 </p>
             </div>
 
 
-            <div class="relative bg-white py-4 rounded-full px-8 w-full max-w-[38vw] shadow-md mt-6">
+            <div
+                class="relative bg-white md:py-4 py-2 rounded-full px-8 w-full md:max-w-[38vw] max-w-[80vw] shadow-md mt-6">
                 <input type="text" placeholder="Find a scan"
                     class="w-full placeholder:text-[16px] placeholder:text-[#3F4E5E] placeholder:font-semibold outline-none text-[#3F4E5E]">
                 <button class="absolute top-1/2 right-6 -translate-y-1/2 cursor-pointer">
@@ -208,29 +223,31 @@
             </div>
 
 
-            <div class="mt-10 flex gap-5">
-                <button class="bg-[linear-gradient(90deg,#0E0F3D_15%,#2F6080_25%,#4DACD4_35%)] py-4 px-8 rounded-full text-white font-semibold text-[20px] flex items-center gap-2  hover:bg-none duration-400 border-2 border-transparent hover:border-2 hover:border-[#0E0F3D] transition-opacity cursor-pointer group duration-300 transition-all bg-clip-padding
-                hover:text-[#0E0F3D] ">
+            <div class="mt-10 flex gap-5 items-center">
+                <a href="" class="bg-[linear-gradient(90deg,#0E0F3D_15%,#2F6080_25%,#4DACD4_35%)] md:py-4 py-2 md:px-8 px-3 rounded-full text-white font-semibold md:text-[20px] text-[10px] flex items-center md:gap-2  hover:bg-none duration-400 border-2 border-transparent hover:border-2 hover:border-[#0E0F3D] transition-opacity cursor-pointer group duration-300 transition-all bg-clip-padding
+                hover:text-[#0E0F3D]">
                     Book Online
                     <img src="assets/right-arrow-svgrepo-com 2.png" alt="Right Arrow"
                         class="group-hover:invert transition-all">
-                </button>
-                <button
-                    class="py-3 px-10 rounded-full text-[20px] text-[#0E0F3D] font-semibold border-2 border-[#0E0F3D] flex items-center gap-2 hover:bg-[linear-gradient(90deg,#0E0F3D_15%,#2F6080_25%,#4DACD4_35%)] hover:text-white transition-colors cursor-pointer group hover:border-transparent duration-300 transition-all bg-clip-padding">
+                </a>
+                <a href="#"
+                    class="md:py-3 py-1 md:px-10 px-3 rounded-full md:text-[20px] text-[10px] text-[#0E0F3D] font-semibold border-2 border-[#0E0F3D] flex items-center md:gap-2 hover:bg-[linear-gradient(90deg,#0E0F3D_15%,#2F6080_25%,#4DACD4_35%)] hover:text-white transition-colors cursor-pointer group hover:border-transparent duration-300 transition-all bg-clip-padding">
                     Clinical Safety
                     <img src="assets/right-arrow-svgrepo-com 2 (1).png" alt="Right Arrow"
                         class="group-hover:brightness-0 group-hover:invert transition-all">
-                </button>
+                </a>
             </div>
 
-            <div class="flex gap-8 items-center mt-20">
+            <div class="flex md:gap-8 gap-4 items-center md:mt-20 mt-9">
                 <div
-                    class="bg-white/80 border-t-4 border-[#F7941F] rounded-xl shadow-sm overflow-hidden hover:-translate-y-1 transition-transform">
-                    <img src="assets/Frame 19 (1).png" alt="Google Reviews" class="h-auto w-[16vw] object-contain">
+                    class="bg-white/80 border-t-4 border-[#F7941F] md:rounded-xl rounded-lg shadow-sm overflow-hidden hover:-translate-y-1 transition-transform">
+                    <img src="assets/Frame 19 (1).png" alt="Google Reviews"
+                        class="h-auto md:w-[16vw] w-[35vw] object-contain">
                 </div>
                 <div
-                    class="bg-white/80 border-t-4 border-[#F7941F] rounded-xl shadow-sm overflow-hidden hover:-translate-y-1 transition-transform">
-                    <img src="assets/Frame 19.png" alt="Yell.com Reviews" class="h-auto w-[16vw] object-contain">
+                    class="bg-white/80 border-t-4 border-[#F7941F] md:rounded-xl rounded-lg shadow-sm overflow-hidden hover:-translate-y-1 transition-transform">
+                    <img src="assets/Frame 19.png" alt="Yell.com Reviews"
+                        class="h-auto md:w-[16vw] w-[35vw] object-contain">
                 </div>
             </div>
         </main>
@@ -241,49 +258,49 @@
     <section id="second-section" class="bg-white pb-20 w-full ">
         <div class="pt-20 flex flex-col justify-center items-center text-center p-5">
             <h2
-                class="text-[50px] font-[800] bg-[linear-gradient(100deg,#0E0F3D_25%,#2F6090_25%,#4DACD4_45%,#B8B99A_60%,#F7941F_100%)] bg-clip-text text-transparent m-0 leading-tight">
+                class="md:text-[50px] text-[36px] font-[800] bg-[linear-gradient(100deg,#0E0F3D_15%,#2F6090_25%,#4DACD4_45%,#B8B99A_60%,#F7941F_100%)] bg-clip-text text-transparent m-0 leading-tight">
                 Pregnancy Scans
             </h2>
-            <p class="text-[20px] text-[#135269] font-medium mt-6 mx-auto max-w-2xl">
+            <p class="md:text-[20px] text-[18px] text-[#135269] font-medium mt-6 mx-auto max-w-2xl">
                 We offer the following pregnancy scans with our qualified and very experienced sonographers.
             </p>
 
-            <div class="flex justify-between items-center mt-10 gap-8">
+            <div class="flex md:flex-row flex-col justify-between items-center mt-10 gap-8 md:mx-20">
 
                 <div class="flex flex-col justify-center items-center  p-5 gap-3">
                     <img src="assets/Group 23.png" alt="" class="p-2 bg-[#B7EAFF] rounded-full">
                     <h3 class="text-[30px] font-[700]">Early pregnancy</h3>
-                    <p class="text-[20px]">Performed from 6 to 14 weeks of pregnancy.</p>
-                    <button
-                        class="py-4 px-10 rounded-full text-[18px] text-[#0E0F3D] font-semibold border-2 border-[#0E0F3D] flex items-center gap-2 hover:bg-[linear-gradient(90deg,#0E0F3D_15%,#2F6080_25%,#4DACD4_35%)] hover:text-white transition-colors cursor-pointer duration-300 transition-all group hover:border-transparent bg-clip-padding">
-                        Book Now
-                        <img src="assets/right-arrow-svgrepo-com 2 (1).png" alt="Right Arrow"
+                    <p class="md:text-[20px] text-[18px]">Performed from 6 to 14 weeks of pregnancy.</p>
+                   <a href="#"
+                            class="md:py-4 py-2  md:px-10 px-4 rounded-full md:text-[18px] text-[16px] text-[#0E0F3D] font-semibold border-2 border-[#0E0F3D] flex items-center gap-2 hover:bg-[linear-gradient(90deg,#0E0F3D_15%,#2F6080_25%,#4DACD4_35%)] hover:text-white transition-colors cursor-pointer duration-300 transition-all group hover:border-transparent bg-clip-padding">
+                            Book Now
+                            <img src="assets/right-arrow-svgrepo-com 2 (1).png" alt="Right Arrow"
                             class="group-hover:brightness-0 group-hover:invert transition-all">
-                    </button>
+                    </a>
                 </div>
 
                 <div class="flex flex-col justify-center items-center gap-3 p-5">
                     <img src="assets/Group 25.png" alt="" class="p-2 bg-[#FFE1BD] rounded-full">
                     <h3 class="text-[30px] font-[700]">Gender reveal</h3>
-                    <p class="text-[20px]">The baby's identity is ascertained by a gender scan.</p>
-                    <button
-                        class="py-4 px-10 rounded-full text-[18px] text-[#0E0F3D] font-semibold border-2 border-[#0E0F3D] flex items-center gap-2 hover:bg-[linear-gradient(90deg,#0E0F3D_15%,#2F6080_25%,#4DACD4_35%)] hover:text-white transition-colors cursor-pointer duration-300 transition-all group hover:border-transparent bg-clip-padding">
+                    <p class="md:text-[20px] text-[18px]">The baby's identity is ascertained by a gender scan.</p>
+                    <a href="#"
+                        class="md:py-4 py-2  md:px-10 px-4 rounded-full md:text-[18px] text-[16px] text-[#0E0F3D] font-semibold border-2 border-[#0E0F3D] flex items-center gap-2 hover:bg-[linear-gradient(90deg,#0E0F3D_15%,#2F6080_25%,#4DACD4_35%)] hover:text-white transition-colors cursor-pointer duration-300 transition-all group hover:border-transparent bg-clip-padding">
                         Book Now
                         <img src="assets/right-arrow-svgrepo-com 2 (1).png" alt="Right Arrow"
                             class="group-hover:brightness-0 group-hover:invert transition-all">
-                    </button>
+                    </a>
                 </div>
 
                 <div class="flex flex-col justify-center items-center gap-3 p-5">
                     <img src="assets/Group 24.png" alt="" class="p-2 bg-[#A6D1FF] rounded-full">
                     <h3 class="text-[30px] font-[700]">Reassurance</h3>
-                    <p class="text-[20px]">scans at any stage of the pregnancy from 6 weeks.</p>
-                    <button
-                        class="py-4 px-10 rounded-full text-[18px] text-[#0E0F3D] font-semibold border-2 border-[#0E0F3D] flex items-center gap-2 hover:bg-[linear-gradient(90deg,#0E0F3D_15%,#2F6080_25%,#4DACD4_35%)] hover:text-white transition-colors cursor-pointer duration-300 transition-all group hover:border-transparent bg-clip-padding">
+                    <p class="md:text-[20px] text-[18px]">scans at any stage of the pregnancy from 6 weeks.</p>
+                    <a href="#"
+                        class="md:py-4 py-2  md:px-10 px-4 rounded-full md:text-[18px] text-[16px] text-[#0E0F3D] font-semibold border-2 border-[#0E0F3D] flex items-center gap-2 hover:bg-[linear-gradient(90deg,#0E0F3D_15%,#2F6080_25%,#4DACD4_35%)] hover:text-white transition-colors cursor-pointer duration-300 transition-all group hover:border-transparent bg-clip-padding">
                         Book Now
                         <img src="assets/right-arrow-svgrepo-com 2 (1).png" alt="Right Arrow"
                             class="group-hover:brightness-0 group-hover:invert transition-all">
-                    </button>
+                    </a>
                 </div>
 
             </div>
@@ -291,34 +308,69 @@
     </section>
 
     <!-- Our Services section -->
-    <section id="third-section" class="bg-[url(/assets/Rectangle_21.png)] h-150 w-full pt-20 px-15">
-        <div class="flex justify-between items-center">
+    <section id="third-section" class="bg-[#E8F8FF] w-full pt-20 md:px-15 px-10 py-20 relative ">
+        <!-- TOP CURVE -->
+            <!-- right top -->
+            <div class=" md:block hidden absolute -top-10 right-1/4 translate-x-1/2
+                w-[50%] h-20
+                bg-white
+                rounded-[0_0_50%_200%]
+                z-0">
+            </div>
+            <!-- leftt top -->
+            <div class="md:block hidden absolute -top-9 left-1/4 -translate-x-1/2
+                w-[56%] h-20
+                bg-[#E8F8FF]
+                rounded-[50%_60%_0_0]
+                z-0">
+            </div>
+            
+            <!-- BOTTOM CURVE -->
+
+            <!-- right bottom -->
+            <div class=" md:block hidden absolute -bottom-10 left-1/4 translate-x-1/2
+                w-[50%] h-20
+                bg-[#E8F8FF]
+                rounded-[0_0_50%_200%]
+                z-0">
+            </div>
+        <!-- left bottom -->
+            <div class="md:block hidden absolute -bottom-13 left-1/4 -translate-x-1/2
+                w-[60%] h-20
+                bg-white
+                rounded-[50%_60%_0_0]
+                z-0">
+            </div>
+
+        <div class="flex md:flex-row flex-col md:gap-0 gap-3 justify-between items-center">
             <h2
-                class="text-[50px] font-[800] bg-[linear-gradient(90deg,#0E0F3D_15%,#2F6090_25%,#4DACD4_45%,#B8B99A_60%,#F7941F_100%)]  m-0 leading-tight inline bg-clip-text text-transparent">
+                class=" md:text-[50px] text-[35px] font-[800] bg-[linear-gradient(90deg,#0E0F3D_15%,#2F6090_25%,#4DACD4_45%,#B8B99A_60%,#F7941F_100%)]  m-0 leading-tight inline bg-clip-text text-transparent">
                 Our Services
             </h2>
-            <button
-                class="py-4 px-10 rounded-full text-[18px] text-[#0E0F3D] font-semibold border-2 border-[#0E0F3D] flex items-center gap-2 hover:bg-[linear-gradient(90deg,#0E0F3D_15%,#2F6080_25%,#4DACD4_35%)] hover:text-white transition-colors cursor-pointer duration-300 transition-all group hover:border-transparent bg-clip-padding">
-                See all services
+           
+            <a href="#"
+                class="md:py-4 py-2 md:px-10 px-4 rounded-full text-[18px] text-[#0E0F3D] font-semibold border-2 border-[#0E0F3D] flex items-center gap-2 hover:bg-[linear-gradient(90deg,#0E0F3D_15%,#2F6080_25%,#4DACD4_35%)] hover:text-white transition-colors cursor-pointer duration-300 transition-all group hover:border-transparent bg-clip-padding">
+                    See all services
                 <img src="assets/right-arrow-svgrepo-com 2 (1).png" alt="Right Arrow"
                     class="group-hover:brightness-0 group-hover:invert transition-all">
-            </button>
+            </a>
+            
         </div>
 
-        <div class="grid grid-cols-2 gap-10 mt-10">
-            <div class="flex items-center justify-between ">
+        <div class="grid md:grid-cols-2 grid-cols-1 gap-10 mt-10">
+            <div class="flex items-center justify-between  md:gap-0 gap-5">
                 <div>
-                    <h3 class="text-[30px] font-[700]">Diagnostic Scans</h3>
-                    <p class="text-[20px]">Accurate imaging for clear health insights every time</p>
+                    <h3 class="md:text-[30px] text-[20px] font-[700]">Diagnostic Scans</h3>
+                    <p class="md:text-[20px] text-[12px]">Accurate imaging for clear health insights every time</p>
                 </div>
                 <div class="h-[150px] w-[400px] ">
                     <img src="assets/gridimage1.jpg" alt="" class="h-full w-full object-cover rounded-lg">
                 </div>
             </div>
-            <div class="flex items-center justify-between">
+            <div class="flex items-center justify-between md:gap-0 gap-8">
                 <div>
-                    <h3 class="text-[30px] font-[700]">Pregnancy Scans</h3>
-                    <p class="text-[20px]">Private pregnancy scans Birmingham</p>
+                    <h3 class="md:text-[30px] text-[20px] font-[700]">Pregnancy Scans</h3>
+                    <p class="md:text-[20px] text-[12px]">Private pregnancy scans Birmingham</p>
                 </div>
                 <div class="h-[150px] w-[400px] ">
                     <img src="assets/gridimage2.jpg" alt="" class="h-full w-full object-cover rounded-lg">
@@ -326,17 +378,17 @@
             </div>
             <div class="flex items-center justify-between">
                 <div>
-                    <h3 class="text-[30px] font-[700]">Paediatric Scans</h3>
-                    <p class="text-[20px]">Gentle imaging designed for children's comfort and safety</p>
+                    <h3 class="md:text-[30px] text-[20px] font-[700]">Paediatric Scans</h3>
+                    <p class="md:text-[20px] text-[12px]">Gentle imaging designed for children's comfort and safety</p>
                 </div>
                 <div class="h-[150px] w-[400px]">
                     <img src="assets/gridimage3.jpg" alt="" class="h-full w-full object-cover rounded-lg">
                 </div>
             </div>
-            <div class="flex items-center justify-between">
+            <div class="flex items-center justify-between gap-6">
                 <div>
-                    <h3 class="text-[30px] font-[700]">Pregnancy Digital Bundle</h3>
-                    <p class="text-[20px]">The waiting weeks pregnancy bundle</p>
+                    <h3 class="md:text-[30px] text-[20px] font-[700]">Pregnancy Digital Bundle</h3>
+                    <p class="md:text-[20px] text-[12px]">The waiting weeks pregnancy bundle</p>
                 </div>
                 <div class="h-[150px] w-[400px]">
                     <img src="assets/gridimage4.jpg" alt="" class="h-full w-full object-cover rounded-lg">
@@ -344,39 +396,40 @@
             </div>
 
         </div>
+
     </section>
 
     <!-- Our Mission, Vision & Values section -->
-    <section id="fourth-sections" class="my-25 text-center">
+    <section id="fourth-sections" class="my-25 text-center md:px-0 px-4">
         <h2
-            class="text-[60px] font-[800] bg-[linear-gradient(90deg,#0E0F3D_15%,#2F6090_25%,#4DACD4_45%,#B8B99A_60%,#F7941F_100%)]  m-0 leading-tight inline bg-clip-text text-transparent">
+            class="md:text-[60px] text-[35px] font-[800] bg-[linear-gradient(90deg,#0E0F3D_15%,#2F6090_25%,#4DACD4_45%,#B8B99A_60%,#F7941F_100%)]  m-0 leading-tight inline bg-clip-text text-transparent px-3">
             Our Mission, Vision & Values
         </h2>
 
-        <p class="text-[20px] text-[#135269] font-medium mt-6 mx-auto max-w-2xl">
+        <p class="md:text-[20px] text-[18px] text-[#135269] font-medium mt-6 mx-auto max-w-2xl">
             We are committed to providing exceptional diagnostic imaging services through compassion, innovation and
             respect for every patient.
         </p>
 
-        <div class="grid grid-cols-2 gap-8 my-10 mx-20">
-            <div class="flex items-center text-start bg-[#E8F8FF] p-6 gap-4 rounded-lg">
+        <div class="grid md:grid-cols-2 grid-cols-1 gap-8 my-10 md:mx-20">
+            <div class="flex md:flex-row flex-col items-center text-start bg-[#E8F8FF] p-6 gap-4 rounded-lg">
                 <div class="p-6 bg-[#FFFFFF80] rounded-lg">
-                    <img src="assets/Group 78.png" alt="" class="h-[30px] w-[60px]">
+                    <img src="assets/Group 78.png" alt="" class="md:h-[30px] md:w-[60px]">
                 </div>
                 <div>
-                    <h3 class="text-[30px] font-[700]">Mission</h3>
-                    <p class="text-[20px] font-semibold">To be the most efficient and preferred diagnostic imaging
+                    <h3 class="md:text-[30px] text-[22px] font-[700] md:text-start text-center">Mission</h3>
+                    <p class="md:text-[20px] font-semibold md:text-start text-center">To be the most efficient and preferred diagnostic imaging
                         centre that provides excellent quality care, that not only meets but goes above and beyond to
                         exceed patients' expectations.</p>
                 </div>
             </div>
-            <div class="flex items-center text-start bg-[#E8F8FF] p-6 gap-4 rounded-lg">
+            <div class="flex md:flex-row flex-col items-center text-start bg-[#E8F8FF] p-6 gap-4 rounded-lg">
                 <div class="p-6 bg-[#FFFFFF80] rounded-lg">
-                    <img src="assets/Group 79.png" alt="" class="h-[30px] w-[60px] ">
+                    <img src="assets/Group 79.png" alt="" class="md:h-[30px] md:w-[60px] ">
                 </div>
                 <div>
-                    <h3 class="text-[30px] font-[700]">Vision</h3>
-                    <p class="text-[20px] font-semibold">Our vision is innovation as healthcare and technology are
+                    <h3 class="md:text-[30px] text-[22px] font-[700]  md:text-start text-center">Vision</h3>
+                    <p class="md:text-[20px] font-semibold md:text-start text-center">Our vision is innovation as healthcare and technology are
                         continuously evolving, which will enhance scanning techniques, image quality, accuracy, and
                         efficiency and provide clearer insights into diseases.</p>
                 </div>
@@ -389,7 +442,7 @@
             our core values:
         </p>
 
-        <div class="grid grid-cols-3 gap-8 my-10 mx-20 ">
+        <div class="grid md:grid-cols-3 grid-cols-1 gap-8 my-10 md:mx-20 ">
             <div class="flex flex-col items-center text-start bg-[#E8F8FF] pt-10 pb-15 px-8 gap-4 rounded-2xl ">
                 <div class="p-4 bg-[#FFFFFF80] rounded-lg">
                     <img src="assets/Group 81.png" alt="" class="h-[40px]">
@@ -397,7 +450,7 @@
                 <div class="bg-[#F7941F] h-[2px] w-15 rounded-full"></div>
                 <div class="text-center">
                     <h3 class="text-[30px] font-[700]">Compassionate</h3>
-                    <p class="text-[20px] font-semibold">Compassionate by being inclusive, attentive, caring, respectful
+                    <p class="md:text-[20px] font-semibold">Compassionate by being inclusive, attentive, caring, respectful
                         and showing kindness to staff, our patients, and their families.</p>
                 </div>
             </div>
@@ -408,7 +461,7 @@
                 <div class="bg-[#F7941F] h-[2px] w-15 rounded-full"></div>
                 <div class="text-center">
                     <h3 class="text-[30px] font-[700]">Caring</h3>
-                    <p class="text-[20px] font-semibold">Caring by going beyond compliance, performing above and beyond
+                    <p class="md:text-[20px] font-semibold">Caring by going beyond compliance, performing above and beyond
                         to improve our services and providing person-centred care by involving patients in their care,
                         offering choices, and promoting dignity and privacy.</p>
                 </div>
@@ -420,7 +473,7 @@
                 <div class="bg-[#F7941F] h-[2px] w-15 rounded-full"></div>
                 <div class="text-center">
                     <h3 class="text-[30px] font-[700]">Respectful</h3>
-                    <p class="text-[20px] font-semibold">Respectful by active listening, seeking to understand others,
+                    <p class="md:text-[20px] font-semibold">Respectful by active listening, seeking to understand others,
                         showing empathy for differences, apologising when things go wrong, being polite and showing
                         gratitude to our staff and patients.</p>
                 </div>
@@ -429,30 +482,30 @@
         </div>
 
         <!-- trusties div -->
-        <div class="mt-20 mx-50 bg-[#08407B] h-55 rounded-2xl relative overflow-hidden">
-            <div class="absolute -right-30 rotate-90 h-full z-0">
+        <div class="md:block hidden mt-20 mx-50 bg-[#08407B]  rounded-2xl relative overflow-hidden">
+            <div class="absolute -right-40 rotate-90 h-full z-0">
                 <img src="assets/bg-design.png" alt="" class="h-full object-cover">
             </div>
-            <div class="absolute -left-30 -rotate-70 h-full z-0">
+            <div class="absolute -left-40 -rotate-70 h-full z-0">
                 <img src="assets/bg-design.png" alt="" class="h-full object-cover">
             </div>
             <!-- Main Content -->
-            <div class="py-10 px-10">
+            <div class="py-10 px-8">
                 <div class="text-white flex justify-center items-center gap-3">
                     <div class="w-30 h-[1px] bg-white"></div>
                     <p class="text-[18px]">ACCREDITED & TRUSTED</p>
                     <div class="w-30 h-[1px] bg-white"></div>
                 </div>
-                <div class="grid grid-cols-9 items-center mt-5">
-                    <img src="assets/icon1.png" alt="" class="h-20 z-20">
-                    <div class="h-18 w-[1px] bg-white ml-15"></div>
-                    <img src="assets/icon2.png" alt="" class="h-20">
-                    <div class="h-18 w-[1px] bg-white ml-15"></div>
-                    <img src="assets/icon3.png" alt="" class="h-20">
-                    <div class="h-18 w-[1px] bg-white ml-15"></div>
-                    <img src="assets/icon4.png" alt="" class="h-20">
-                    <div class="h-18 w-[1px] bg-white ml-15"></div>
-                    <img src="assets/icon5.png" alt="" class="h-20 z-20">
+                <div class="flex items-center justify-between  items-center mt-5">
+                    <img src="assets/icon1.png" alt="" class="md:h-[100px] md:w-[190px]  z-20">
+                    <div class="h-18 w-[1px] bg-white mx-4"></div>
+                    <img src="assets/icon2.png" alt="" class="md:h-[100px] md:w-[190px]">
+                    <div class="h-18 w-[1px] bg-white"></div>
+                    <img src="assets/icon3.png" alt="" class="md:h-[100px] md:w-[190px]">
+                    <div class="h-18 w-[1px] bg-white"></div>
+                    <img src="assets/icon4.png" alt="" class="md:h-[90px] md:w-[180px] ">
+                    <div class="h-18 w-[1px] bg-white "></div>
+                    <img src="assets/icon5.png" alt="" class="md:h-[100px] md:w-[190px] z-20 ">
                 </div>
                 <!-- Down Bars -->
                 <div class="flex justify-between items-center px-10 py-3">
@@ -469,28 +522,27 @@
     </section>
 
     <!-- Meet the team section -->
-    <section id="fifth-section" class="bg-[#EEF7FB] px-20 py-20">
+    <section id="fifth-section" class="bg-[#EEF7FB] md:px-20 px-5 py-20">
 
-        <div class="flex justify-between items-center">
+        <div class="flex md:flex-row flex-col justify-between items-center">
             <div>
                 <h2
-                    class="text-[50px] font-[800] bg-[linear-gradient(90deg,#0E0F3D_15%,#2F6090_25%,#4DACD4_45%,#B8B99A_60%,#F7941F_100%)]  m-0 leading-tight inline bg-clip-text text-transparent">
+                    class="md:text-[50px] text-[35px] font-[800] bg-[linear-gradient(90deg,#0E0F3D_15%,#2F6090_25%,#4DACD4_45%,#B8B99A_60%,#F7941F_100%)]  m-0 leading-tight inline bg-clip-text text-transparent">
                     Meet the Team
                 </h2>
-                <p class="text-[20px]">Meet the dedicated team that makes it all possible</p>
+                <p class="md:text-[20px] ">Meet the dedicated team that makes it all possible</p>
             </div>
-            <div>
-               <a href="/Team.html"><button
-                        class="py-4 px-10 rounded-full text-[18px] text-[#0E0F3D] font-semibold border-2 border-[#0E0F3D] flex items-center gap-2 hover:bg-[linear-gradient(90deg,#0E0F3D_15%,#2F6080_25%,#4DACD4_35%)] hover:text-white transition-colors cursor-pointer duration-300 transition-all group hover:border-transparent bg-clip-padding">
-                         View All
+            <div class="md:ml-0 ml-50">
+                <a href="/Team.html"
+                        class="md:py-4 py-1 md:px-10 px-4 rounded-full text-[18px] text-[#0E0F3D] font-semibold border-2 border-[#0E0F3D] flex items-center gap-2 hover:bg-[linear-gradient(90deg,#0E0F3D_15%,#2F6080_25%,#4DACD4_35%)] hover:text-white transition-colors cursor-pointer duration-300 transition-all group hover:border-transparent bg-clip-padding">
+                        View All
                         <img src="assets/right-arrow-svgrepo-com 2 (1).png" alt="Right Arrow"
                             class="group-hover:brightness-0 group-hover:invert transition-all">
-                    </button>
                 </a>
             </div>
         </div>
 
-        <div class="grid grid-cols-4 gap-4 mt-10">
+        <div class="grid md:grid-cols-4 grid-cols-1 gap-4 mt-10">
 
             <div
                 class="flex flex-col pb-7 bg-white shadow-md  rounded-xl overflow-hidden hover:-translate-y-3 duration-500">
@@ -583,66 +635,66 @@
     </section>
 
     <!-- Ultrasound Scan Prices section -->
-    <section id="sixth-section" class="py-15 px-40">
+    <section id="sixth-section" class="md:py-15 py-5 md:px-40 px-10">
         <div class="text-center">
             <h2
-                class="text-[50px] font-[800] bg-[linear-gradient(90deg,#0E0F3D_15%,#2F6090_25%,#4DACD4_45%,#B8B99A_60%,#F7941F_100%)]  m-0 leading-tight inline bg-clip-text text-transparent ">
+                class="md:text-[50px] text-[35px] font-[800] bg-[linear-gradient(90deg,#0E0F3D_15%,#2F6090_25%,#4DACD4_45%,#B8B99A_60%,#F7941F_100%)]  m-0 leading-tight inline bg-clip-text text-transparent ">
                 Ultrasound Scan Prices
             </h2>
 
             <div class="flex flex-col gap-6 pt-10">
 
                 <div class=" flex justify-between items-center">
-                    <p class="text-[20px] font-bold">Obstetrics single</p>
-                    <div class="h-[2px] w-7 bg-[#135269]"></div>
+                    <p class="md:text-[20px] text-[18px] font-bold">Obstetrics single</p>
+                    <div class="h-[1px] w-7 bg-[#135269]"></div>
                 </div>
 
                 <div class=" flex justify-between items-center gap-2 ">
-                    <p class="text-[18px] font-medium">Early Pregnancy scan</p>
-                    <div class="h-[2px] w-[80%] bg-[#135269]"></div>
-                    <p class="text-[18px] font-semibold">£45.00</p>
+                    <p class=" font-medium">Early Pregnancy scan</p>
+                    <div class="md:block hidden h-[1px] w-[80%] bg-[#135269]"></div>
+                    <p class="md:text-[18px] font-semibold">£45.00</p>
                 </div>
 
                 <div class=" flex justify-between items-center gap-2 ">
-                    <p class="text-[18px] font-medium">Viability/reassurance scan</p>
-                    <div class="h-[2px] w-[78%] bg-[#135269]"></div>
-                    <p class="text-[18px] font-semibold">£45.00</p>
+                    <p class=" font-medium">Viability/reassurance scan</p>
+                    <div class="md:block hidden h-[1px] w-[78%] bg-[#135269]"></div>
+                    <p class="md:text-[18px] font-semibold">£45.00</p>
                 </div>
 
                 <div class=" flex justify-between items-center gap-2 ">
-                    <p class="text-[18px] font-medium">Gender scan</p>
-                    <div class="h-[2px] w-[85%] bg-[#135269]"></div>
-                    <p class="text-[18px] font-semibold">£45.00</p>
+                    <p class=" font-medium">Gender scan</p>
+                    <div class="md:block hidden h-[1px] w-[85%] bg-[#135269]"></div>
+                    <p class="md:text-[18px] font-semibold">£45.00</p>
                 </div>
 
                 <div class=" flex justify-between items-center gap-2 ">
-                    <p class="text-[18px] font-medium">Dating scan</p>
-                    <div class="h-[2px] w-[85%] bg-[#135269]"></div>
-                    <p class="text-[18px] font-semibold">£75.00</p>
+                    <p class=" font-medium">Dating scan</p>
+                    <div class="md:block hidden h-[1px] w-[85%] bg-[#135269]"></div>
+                    <p class="md:text-[18px] font-semibold">£75.00</p>
+                </div>
+
+                <div class=" flex justify-between items-center md:gap-2 gap-25 ">
+                    <p class=" font-medium">Growth and Foetal Well-Being</p>
+                    <div class="md:block hidden h-[1px] w-[75%] bg-[#135269]"></div>
+                    <p class="md:text-[18px] font-semibold">£80.00</p>
+                </div>
+
+                <div class=" flex items-center  md:gap-2 gap-25 ">
+                    <p class=" font-medium md:whitespace-nowrap ">Growth & Placenta Localisation</p>
+                    <div class="md:block hidden h-[1px] w-[75%] bg-[#135269]"></div>
+                    <p class="md:text-[18px] font-semibold">£100.00</p>
                 </div>
 
                 <div class=" flex justify-between items-center gap-2 ">
-                    <p class="text-[18px] font-medium">Growth and Foetal Well-Being</p>
-                    <div class="h-[2px] w-[75%] bg-[#135269]"></div>
-                    <p class="text-[18px] font-semibold">£80.00</p>
+                    <p class=" font-medium">Cervical Length</p>
+                    <div class="md:block hidden h-[1px] w-[83%] bg-[#135269]"></div>
+                    <p class="md:text-[18px] font-semibold">£95.00</p>
                 </div>
 
                 <div class=" flex justify-between items-center gap-2 ">
-                    <p class="text-[18px] font-medium">Growth & Placenta Localisation</p>
-                    <div class="h-[2px] w-[75%] bg-[#135269]"></div>
-                    <p class="text-[18px] font-semibold">£100.00</p>
-                </div>
-
-                <div class=" flex justify-between items-center gap-2 ">
-                    <p class="text-[18px] font-medium">Cervical Length</p>
-                    <div class="h-[2px] w-[83%] bg-[#135269]"></div>
-                    <p class="text-[18px] font-semibold">£95.00</p>
-                </div>
-
-                <div class=" flex justify-between items-center gap-2 ">
-                    <p class="text-[18px] font-medium">Mid T/20 Week</p>
-                    <div class="h-[2px] w-[84%] bg-[#135269]"></div>
-                    <p class="text-[18px] font-semibold">£100.00</p>
+                    <p class="font-medium">Mid T/20 Week</p>
+                    <div class="md:block hidden h-[1px] w-[84%] bg-[#135269]"></div>
+                    <p class="md:text-[18px] font-semibold">£100.00</p>
                 </div>
 
                 <div class=" flex justify-between items-center pt-5">
@@ -666,16 +718,16 @@
     </section>
 
     <!-- Advanced Scans for Every Need section -->
-    <section id="seventh-section" class="py-20 px-20">
+    <section id="seventh-section" class="py-20 md:px-20 px-8">
         <div class="text-center">
             <h2
-                class="text-[50px] font-[800] bg-[linear-gradient(90deg,#0E0F3D_15%,#2F6090_25%,#4DACD4_45%,#B8B99A_60%,#F7941F_100%)]  m-0 leading-tight inline bg-clip-text text-transparent ">
+                class="md:text-[50px] text-[35px] font-[800] bg-[linear-gradient(90deg,#0E0F3D_15%,#2F6090_25%,#4DACD4_45%,#B8B99A_60%,#F7941F_100%)]  m-0 leading-tight inline bg-clip-text text-transparent ">
                 Advanced Scans for Every Need
             </h2>
             <p class="text-[18px]">Same day results with accurate, safe and reliable diagnostic imaging.</p>
         </div>
 
-        <div class="grid grid-cols-3 gap-15 pt-20">
+        <div class="grid md:grid-cols-3 grid-cols-1 gap-15 pt-20">
             <!-- Female Scan -->
             <div class="px-5 py-8 bg-[#EEF7FB] rounded-xl shadow-lg  hover:-translate-y-3 duration-500">
                 <div class="flex justify-start gap-5 items-center ">
@@ -729,12 +781,12 @@
                         <p class="text-[18px] font-semibold">See Full Range</p>
                     </div>
 
-                    <button
-                        class="bg-[linear-gradient(90deg,#0E0F3D_15%,#2F6080_25%,#4DACD4_35%)] py-4 px-8 rounded-full text-white font-semibold text-[20px] flex items-center justify-center gap-2  hover:bg-none duration-400 border-2 border-transparent hover:border-2 hover:border-[#0E0F3D] transition-opacity cursor-pointer group duration-300 transition-all bg-clip-padding hover:text-[#0E0F3D] ">
+                    <a href="#"
+                        class="bg-[linear-gradient(90deg,#0E0F3D_15%,#2F6080_25%,#4DACD4_35%)] md:py-4 py-2 md:px-8 px-4 rounded-full text-white font-semibold text-[20px] flex items-center justify-center gap-2  hover:bg-none duration-400 border-2 border-transparent hover:border-2 hover:border-[#0E0F3D] transition-opacity cursor-pointer group duration-300 transition-all bg-clip-padding hover:text-[#0E0F3D] ">
                         Book Here
                         <img src="assets/right-arrow-svgrepo-com 2.png" alt="Right Arrow"
                             class="group-hover:invert transition-all">
-                    </button>
+                    </a>
 
 
                 </div>
@@ -794,13 +846,11 @@
                         <p class="text-[18px] font-semibold">See Full Range</p>
                     </div>
 
-                    <button
-                        class="bg-[linear-gradient(90deg,#0E0F3D_15%,#2F6080_25%,#4DACD4_35%)] py-4 px-8 rounded-full text-white font-semibold text-[20px] flex items-center justify-center gap-2  hover:bg-none duration-400 border-2 border-transparent hover:border-2  transition-opacity cursor-pointer group duration-300 transition-all bg-clip-padding hover:text-white border-1 border-white ">
+                    <a href="#"
+                        class="bg-[linear-gradient(90deg,#0E0F3D_15%,#2F6080_25%,#4DACD4_35%)] md:py-4 py-1 md:px-8 px-4 rounded-full text-white font-semibold text-[20px] flex items-center justify-center gap-2  hover:bg-none duration-400 border-2 border-transparent hover:border-2  transition-opacity cursor-pointer group duration-300 transition-all bg-clip-padding hover:text-white border-1 border-white ">
                         Book Here
                         <img src="assets/right-arrow-svgrepo-com 2.png" alt="Right Arrow">
-                    </button>
-
-
+                    </a>
                 </div>
 
             </div>
@@ -858,13 +908,12 @@
                         <p class="text-[18px] font-semibold">See Full Range</p>
                     </div>
 
-                    <button
-                        class="bg-[linear-gradient(90deg,#0E0F3D_15%,#2F6080_25%,#4DACD4_35%)] py-4 px-8 rounded-full text-white font-semibold text-[20px] flex items-center justify-center gap-2  hover:bg-none duration-400 border-2 border-transparent hover:border-2 hover:border-[#0E0F3D] transition-opacity cursor-pointer group duration-300 transition-all bg-clip-padding hover:text-[#0E0F3D] ">
+                    <a href="#"
+                        class="bg-[linear-gradient(90deg,#0E0F3D_15%,#2F6080_25%,#4DACD4_35%)] md:py-4 py-2 md:px-8 px-4 rounded-full text-white font-semibold text-[20px] flex items-center justify-center gap-2  hover:bg-none duration-400 border-2 border-transparent hover:border-2 hover:border-[#0E0F3D] transition-opacity cursor-pointer group duration-300 transition-all bg-clip-padding hover:text-[#0E0F3D] ">
                         Book Here
                         <img src="assets/right-arrow-svgrepo-com 2.png" alt="Right Arrow"
                             class="group-hover:invert transition-all">
-                    </button>
-
+                    </a>
 
                 </div>
 
@@ -875,51 +924,51 @@
 
     <!-- Wpa Insurance Partner section -->
     <section id="eight-section"
-        class="my-20 mx-50 bg-[#08407B] rounded-3xl relative overflow-hidden flex justify-between items-center py-15 px-20 gap-10 relative">
+        class="md:my-20 md:mx-50 bg-[#08407B] rounded-3xl relative overflow-hidden flex md:flex-row flex-col justify-between items-center py-15 md:px-20 px-5 gap-10 relative">
         <img src="assets/WPA-Provident-RGB 1.png" alt="">
 
-        <div class="text-white z-10">
-            <h2 class="text-[40px] font-semibold mb-5">Wpa Insurance Partner</h2>
-            <p class="text-[18px] mb-5">Universal Ultrasound diagnostics is now registered with and provides care
+        <div class="text-white z-10 flex flex-col  ">
+            <h2 class="md:text-[40px] text-[30px] font-semibold mb-5">Wpa Insurance Partner</h2>
+            <p class="md:text-[18px] mb-5">Universal Ultrasound diagnostics is now registered with and provides care
                 through various healthcare insurance providers.</p>
-            <p class="text-[18px] mb-5">Preauthorisation by your insurance provider is usually required prior to making
+            <p class="md:text-[18px] mb-5">Preauthorisation by your insurance provider is usually required prior to making
                 an appointment. An insurance excess or co-payment may also be required with certain providers.</p>
-            <button
-                class="py-4 px-10 rounded-full text-[18px] text-white font-semibold border-2 border-white flex items-center gap-2 hover:bg-[linear-gradient(90deg,#0E0F3D_15%,#2F6080_25%,#4DACD4_35%)] hover:text-white transition-colors cursor-pointer duration-300 transition-all group hover:border-transparent bg-clip-padding ">
+            <a href="#"
+                class="md:py-4 py-2 md:px-10 px-4 rounded-full md:text-[18px] text-white font-semibold border-2 border-white flex items-center gap-2 hover:bg-[linear-gradient(90deg,#0E0F3D_15%,#2F6080_25%,#4DACD4_35%)] hover:text-white transition-colors cursor-pointer duration-300 transition-all group hover:border-transparent bg-clip-padding self-start ">
                 Book Online
                 <img src="assets/right-arrow-svgrepo-com 2.png" alt="Right Arrow"
                     class="group-hover:brightness-0 group-hover:invert transition-all">
-            </button>
+            </a>
 
         </div>
         <!-- Overlay Design -->
-        <div class="h-[158px] w-[158px] bg-[#4A6EA8A3] rounded-full absolute -right-25 z-9"></div>
-        <div class="h-[296px] w-[297px] bg-[#4A6EA8A3] rounded-full absolute -right-35 z-8"></div>
-        <div class="h-[370px] w-[370px] bg-[#4A6EA8A3] rounded-full absolute -right-38 z-7"></div>
-        <div class="h-[426px] w-[426px] bg-[#4069A9DE] rounded-full absolute -right-33 z-6"></div>
-        <div class="h-[426px] w-[426px] bg-[#3861A4] rounded-full absolute -right-10 z-5"></div>
-        <div class="h-[426px] w-[426px] bg-[#325C9F99] rounded-full absolute right-10 z-4"></div>
+        <div class="md:block hidden h-[158px] w-[158px] bg-[#4A6EA8A3] rounded-full absolute -right-25 z-9"></div>
+        <div class="md:block hidden h-[296px] w-[297px] bg-[#4A6EA8A3] rounded-full absolute -right-35 z-8"></div>
+        <div class="md:block hidden h-[370px] w-[370px] bg-[#4A6EA8A3] rounded-full absolute -right-38 z-7"></div>
+        <div class="md:block hidden h-[426px] w-[426px] bg-[#4069A9DE] rounded-full absolute -right-33 z-6"></div>
+        <div class="md:block hidden h-[426px] w-[426px] bg-[#3861A4] rounded-full absolute -right-10 z-5"></div>
+        <div class="md:block hidden h-[426px] w-[426px] bg-[#325C9F99] rounded-full absolute right-10 z-4"></div>
 
 
     </section>
 
     <!--footer section -->
-    <section class=" mt-130 ">
+    <section class="md:mt-100 mt-40 ">
         <div class="bg-[#00213B] w-full relative">
             <!-- overlay map image -->
-            <div class="absolute p-5 -top-110 left-8 mx-10 h-full ">
-                <img src="assets/map.png" alt="" class="h-[85%] object-cover border-15 border-white rounded-2xl">
+            <div class="absolute md:p-5 md:-top-80 -top-30 md:left-15 md:mx-10 mx-5 h-full ">
+                <img src="assets/map.png" alt="" class="md:h-[55%] h-[10%] object-cover md:border-15 border-10 border-white rounded-2xl">
             </div>
 
-            <div class="grid grid-cols-[1fr_3fr] gap-10  text-white pt-65 px-20">
+            <div class="grid  md:grid-cols-[1fr_3fr]  gap-10 text-white md:pt-45 pt-25 md:px-20 px-5">
 
-                <div class=" flex flex-col gap-3 ">
-                    <img src="assets/logo.png" alt="" class="h-[103px] p-4 bg-[#FFFFFF] rounded-lg w-[251px]">
-                    <p>Providing private Ultrasound scans with compassion, advanced technology and expert care. Your
+                <div class=" flex flex-col md:place-items-start place-items-center md:gap-3 gap-5 ">
+                    <img src="assets/logo.png" alt="" class="md:h-[103px] h-[80px] p-4 bg-[#FFFFFF] rounded-lg md:w-[251px] w-[200px]">
+                    <p class="md:text-start text-center">Providing private Ultrasound scans with compassion, advanced technology and expert care. Your
                         health is our priority.</p>
                     <div class="flex gap-5">
-                        <img src="assets/Frame 19 (1).png" alt="" class=" h-[90px] p-2 bg-[#FFFFFFE5] rounded-lg">
-                        <img src="assets/Frame 19.png" alt="" class="h-[90px] p-2 bg-[#FFFFFFE5] rounded-lg">
+                        <img src="assets/Frame 19 (1).png" alt="" class=" md:h-[90px] h-[60px] p-2 bg-[#FFFFFFE5] rounded-lg">
+                        <img src="assets/Frame 19.png" alt="" class="md:h-[90px] h-[60px] p-2 bg-[#FFFFFFE5] rounded-lg">
                     </div>
                     <p>Follow Us</p>
                     <div class="flex gap-3 items-center">
@@ -929,9 +978,9 @@
                     </div>
 
                 </div>
-                <div class=" grid grid-cols-[1.5fr_1fr_1fr_1fr_1fr] gap-8">
+                <div class=" grid md:grid-cols-[1.5fr_1fr_1fr_1fr_1fr] gap-8">
 
-                    <div class="flex flex-col gap-4">
+                    <div class="flex flex-col md:gap-4 gap-2">
                         <div class="flex gap-3 items-center">
                             <img src="assets/Group 39.png" alt="">
                             <p class="text-[18px] font-bold">Find Us</p>
@@ -943,11 +992,11 @@
                         </div>
                         <div class="flex gap-2 items-center">
                             <img src="assets/tabler_mail.png" alt="">
-                            <p>admin@ultrasounddiagnostic.co.uk</p>
+                            <a href="#" class="cursor-pointer">admin@ultrasounddiagnostic.co.uk</a>
                         </div>
                     </div>
 
-                    <div class="flex flex-col gap-4">
+                    <div class="flex flex-col md:gap-4 gap-2">
                         <div class="flex gap-3 items-center">
                             <img src="assets/hearticon.png" alt="">
                             <p class="text-[18px] font-bold">Scans</p>
@@ -959,19 +1008,19 @@
                     </div>
 
 
-                    <div class="flex flex-col gap-4">
+                    <div class="flex flex-col md:gap-4 gap-2">
                         <div class="flex gap-3 items-center">
                             <img src="assets/mingcute_link-fill.png" alt="">
                             <p class="text-[18px] font-bold">Quick Links</p>
                         </div>
-                        <p>Pregnancy Digital Bundle</p>
-                        <p> Meet The Team</p>
-                        <p> Wellness Clinic</p>
-                        <p>Sonography Mentorship</p>
+                        <a href="#" class="cursor-pointer">Pregnancy Digital Bundle</a>
+                        <a href="#" class="cursor-pointer"> Meet The Team</a>
+                        <a href="#" class="cursor-pointer"> Wellness Clinic</a>
+                        <a href="#" class="cursor-pointer">Sonography Mentorship</a>
                     </div>
 
 
-                    <div class="flex flex-col gap-4">
+                    <div class="flex flex-col md:gap-4 gap-2">
                         <div class="flex gap-3 items-center">
                             <img src="assets/mdi_legal.png" alt="">
                             <p class="text-[18px] font-bold">Legal</p>
@@ -987,7 +1036,7 @@
                     </div>
 
 
-                    <div class="flex flex-col gap-4">
+                    <div class="flex flex-col md:gap-4 gap-2">
                         <div class="flex gap-3 items-center">
                             <img src="assets/Vector (1).png" alt="">
                             <p class="text-[18px] font-bold">Help Us Improve</p>
@@ -1002,7 +1051,7 @@
 
             </div>
 
-            <div class="absolute bottom-22 left-80">
+            <div class="md:block hidden absolute bottom-50 left-70">
                 <p
                     class="text-[20px] bg-[linear-gradient(90deg,#FFFFFF_25%,#2F6090_35%,#4DACD4_55%,#B8B99A_60%,#F7941F_100%)] leading-tight inline bg-clip-text text-transparent font-bold">
                     Trusted Partnerships Supporting Your Health</p>
@@ -1018,13 +1067,13 @@
 
             <div class="text-white pt-10">
                 <div class="h-[0.08px] bg-[#24445D] w-full"></div>
-                <div class="flex justify-between items-center  px-10 py-5">
+                <div class="flex justify-between items-center  md:px-10 px-3 py-5">
                     <div>
-                        <p>© 2026 Universal Ultrasound Group. All Rights Reserved.</p>
+                        <p class="md:text-[16px] text-[12px] opacity-80">© 2026 Universal Ultrasound Group. All Rights Reserved.</p>
                     </div>
-                    <div class="flex gap-2 items-center">
-                        <P>Sitemap</P>
-                        <div class="w-[1px] h-5 bg-white"></div>
+                    <div class="flex gap-2 items-center md:text-[16px] text-[12px] opacity-80">
+                        <P >Sitemap</P>
+                        <div class=" w-[1px] h-5 bg-white"></div>
                         <p>Privacy Policy</p>
                     </div>
                 </div>
